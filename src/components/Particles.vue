@@ -20,14 +20,14 @@ const particlesLoaded = async (container: any) => {
       :options="{
         particles: {
           number: {
-            value: 400,
+            value: 500,
             density: {
               enable: true,
               value_area: 7788.590894429195
             }
           },
           color: {
-            value: '#fff',
+            value: '#a60080',
           },
           shape: {
             type: circle,
@@ -45,7 +45,7 @@ const particlesLoaded = async (container: any) => {
             }
           },
           opacity: {
-            value: 0.5,
+            value: .7,
             random: true,
             anim: {
               enable: false,
