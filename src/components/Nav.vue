@@ -1,13 +1,14 @@
 <script setup lang="ts">
+import Logo from '../../public/myc-logo.png'
 </script>
 
 <template>
   <div class="nav-section">
-    <div class="nav-logo">     
+    <div class="nav-logo-container">
+      <img :src="Logo" alt="MYC" class="nav-logo">     
     </div>
 
     <div class="nav-links">
-      <a href="">Home</a>
       <a href="">About</a>
       <a href="">Skills</a>
       <a href="">Projects</a>
@@ -19,18 +20,37 @@
 
 <style lang="scss" scoped>
 .nav-section {
-  margin-top: 1.5rem;
-  background-color: #FF9090;
-  padding: 1.5rem;
-  margin-inline: 3rem;
-  border-radius: 2rem;
+  background-color: #373f7a;
+  padding: 1rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  .nav-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-logo {
+    width: 50px;
+  }
   .nav-links {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: white;
+      transition: all .2s ease-in;
+    }
+
+    a:hover {
+      color: #f59694;
+    }
   }
 }
 </style>
