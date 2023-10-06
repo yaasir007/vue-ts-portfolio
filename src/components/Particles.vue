@@ -20,7 +20,7 @@ const particlesLoaded = async (container: any) => {
       :options="{
         particles: {
           number: {
-            value: 557,
+            value: 400,
             density: {
               enable: true,
               value_area: 7788.590894429195
