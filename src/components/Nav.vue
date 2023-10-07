@@ -20,6 +20,7 @@ import Logo from '../assets/myc-logo.png'
 
 <style lang="scss" scoped>
 .nav-section {
+  height: 8vh;
   background-color: #373f7a;
   padding: .8rem;
 
