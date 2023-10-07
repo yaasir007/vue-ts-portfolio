@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Logo from '../../public/myc-logo.png'
+import Logo from '../assets/myc-logo.png'
 </script>
 
 <template>
@@ -21,7 +21,7 @@ import Logo from '../../public/myc-logo.png'
 <style lang="scss" scoped>
 .nav-section {
   background-color: #373f7a;
-  padding: 1rem;
+  padding: .8rem;
 
   display: flex;
   justify-content: space-between;
@@ -33,9 +33,10 @@ import Logo from '../../public/myc-logo.png'
     align-items: center;
   }
   .nav-logo {
-    width: 50px;
+    width: 40px;
   }
   .nav-links {
+    padding-right: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
