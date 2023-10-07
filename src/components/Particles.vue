@@ -20,7 +20,7 @@ const particlesLoaded = async (container: any) => {
       :options="{
         particles: {
           number: {
-            value: 500,
+            value: 1000,
             density: {
               enable: true,
               value_area: 7788.590894429195
@@ -30,7 +30,7 @@ const particlesLoaded = async (container: any) => {
             value: '#a60080',
           },
           shape: {
-            type: circle,
+            type: 'circle',
             stroke: {
               width: 0,
               color: '#000000'
@@ -87,15 +87,15 @@ const particlesLoaded = async (container: any) => {
           }
         },
         interactivity: {
-          detect_on: canvas,
+          detect_on: 'canvas',
           events: {
             onhover: {
               enable: true,
-              mode: repulse
+              mode: 'repulse'
             },
             onclick: {
               enable: true,
-              mode: repulse
+              mode: 'repulse'
             },
             resize: true
           },
