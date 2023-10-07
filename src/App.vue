@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import Nav from './components/Nav.vue'
 import Particles from './components/Particles.vue'
+import Nav from './components/Nav.vue'
+import Intro from "./components/Intro.vue";
 </script>
 
 <template>
-  <Nav />
   <Particles />
+  <Nav />
+  <Intro />
 </template>
 
