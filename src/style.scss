@@ -11,3 +11,12 @@ body {
   scroll-behavior: smooth;
   color: white;
 }
+
+.img-res {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: bottom;
+}
