@@ -2,6 +2,10 @@
 import MyImage from '../assets/my-image.jpg'
 import Linkedin from '../assets/socials/linkedin.svg'
 import Github from '../assets/socials/github.svg'
+import Medium from '../assets/socials/medium.svg'
+import Slack from '../assets/socials/slack.svg'
+import Twitter from '../assets/socials/x.svg'
+import Discord from '../assets/socials/discord.svg'
 
 </script>
 
@@ -21,6 +25,18 @@ import Github from '../assets/socials/github.svg'
           </div>
           <div class="social">
             <img :src=Github alt="Github" class="img-res">
+          </div>
+          <div class="social">
+            <img :src=Medium alt="Github" class="img-res">
+          </div>
+          <div class="social">
+            <img :src=Slack alt="Github" class="img-res">
+          </div>
+          <div class="social">
+            <img :src=Twitter alt="Github" class="img-res">
+          </div>
+          <div class="social">
+            <img :src=Discord alt="Github" class="img-res">
           </div>
         </div>
       </div>
@@ -59,6 +75,9 @@ import Github from '../assets/socials/github.svg'
         display: flex;
         gap: 1rem;
         .social {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 2rem;
         }
       }
