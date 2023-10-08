@@ -9,7 +9,7 @@ import Logo from '../assets/myc-logo.png'
     </div>
 
     <div class="nav-links">
-      <a href="">About</a>
+      <a href="about">About</a>
       <a href="">Skills</a>
       <a href="">Projects</a>
       <a href="">Experiences</a>
@@ -20,6 +20,7 @@ import Logo from '../assets/myc-logo.png'
 
 <style lang="scss" scoped>
 .nav-section {
+  position: sticky;
   height: 8vh;
   background-color: #373f7a;
   padding: .8rem;
@@ -46,8 +47,8 @@ import Logo from '../assets/myc-logo.png'
     a {
       text-decoration: none;
       font-size: 1.3rem;
-      color: white;
       transition: all .2s ease-in;
+      color: white;
     }
 
     a:hover {

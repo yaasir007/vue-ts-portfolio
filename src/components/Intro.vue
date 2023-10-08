@@ -28,7 +28,6 @@ import Scroll from '../assets/scrollDown.svg'
     align-items: center;
     flex-direction: column;
     height: 77vh;
-    color: white;
     font-size: 5rem;
 
     .intro-name,
@@ -38,7 +37,6 @@ import Scroll from '../assets/scrollDown.svg'
   }
 
   .intro-scroll-down {
-    color: white;
     height: 15vh;
     display: flex;
     justify-content: flex-end;
