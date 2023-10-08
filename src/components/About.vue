@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import MyImage from '../assets/my-image.jpg'
+import Linkedin from '../assets/socials/linkedin.svg'
+import Github from '../assets/socials/github.svg'
+
 </script>
 
 <template>
@@ -9,8 +12,16 @@ import MyImage from '../assets/my-image.jpg'
         <div class="about-title">Hola geeks...</div>
         <div class="about-description">
           Currently working at Xefi Mauritius as a <span class="about-job-title">Full Stack Web Developer</span> using modern technologies. 
-          <br>Explore my modern web portfolio: Ruby, JavaScript, Docker. Cutting-edge development for innovative web experiences. 
-          <br><span class="about-hashtags">#WebDev #Ruby #JavaScript #Docker</span>
+          <p>Explore my modern web portfolio: Ruby, JavaScript, Docker. Cutting-edge development for innovative web experiences. </p>
+          <p class="about-hashtags">#WebDev #Ruby #JavaScript #Docker</p>
+        </div>
+        <div class="about-socials">
+          <div class="social">
+            <img :src=Linkedin alt="Linkedin" class="img-res">
+          </div>
+          <div class="social">
+            <img :src=Github alt="Github" class="img-res">
+          </div>
         </div>
       </div>
       <div class="about-img">
@@ -40,10 +51,17 @@ import MyImage from '../assets/my-image.jpg'
       width: 45%;
       display: flex;
       justify-content: flex-end;
-      // align-items: flex-end;
       flex-direction: column;
       font-size: 1.3rem;
       gap: 1rem;
+
+      .about-socials {
+        display: flex;
+        gap: 1rem;
+        .social {
+          width: 2rem;
+        }
+      }
 
       .about-job-title,
       .about-hashtags {
