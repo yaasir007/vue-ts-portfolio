@@ -10,7 +10,6 @@ import Logo from '../assets/myc-logo.png'
 
     <div class="nav-links">
       <a href="about">About</a>
-      <a href="">Skills</a>
       <a href="">Projects</a>
       <a href="">Experiences</a>
       <a href="">Articles</a>
