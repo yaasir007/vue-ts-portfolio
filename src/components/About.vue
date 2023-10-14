@@ -15,7 +15,7 @@ import Discord from '../assets/socials/discord.svg'
       <div class="about-content">
         <div class="about-title">Hola geeks...</div>
         <div class="about-description">
-          Currently working at Xefi Mauritius as a <span class="about-job-title">Full Stack Web Developer</span> using modern technologies. 
+          Currently working at Xefi Mauritius as a <span class="about-job-title">Full Stack Dev</span> using modern technologies. 
           <p>Explore my modern web portfolio: Ruby, JavaScript, Docker. Cutting-edge development for innovative web experiences. </p>
           <p class="about-hashtags">#WebDev #Ruby #JavaScript #Docker</p>
         </div>
