@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Parkium from '../assets/projects/parkium.png'
+import Parkium from "../assets/projects/parkium.jpeg";
 </script>
 
 <template>
@@ -8,10 +8,57 @@ import Parkium from '../assets/projects/parkium.png'
     <div class="projects-container">
       <div class="project">
         <div class="project-img">
-          <img :src=Parkium alt="" class="img-res">
+          <img :src="Parkium" alt="" class="img-res" />
         </div>
         <div class="project-content">
-          <button>Open Website</button>
+          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            magni ut minima earum quasi ad?</span>
+            <div class="project-btns">
+              <button>Open Website</button>
+              <button>Open Github</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <img :src="Parkium" alt="" class="img-res" />
+        </div>
+        <div class="project-content">
+          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            magni ut minima earum quasi ad?</span>
+            <div class="project-btns">
+              <button>Open Website</button>
+              <button>Open Github</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <img :src="Parkium" alt="" class="img-res" />
+        </div>
+        <div class="project-content">
+          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            magni ut minima earum quasi ad?</span>
+            <div class="project-btns">
+              <button>Open Website</button>
+              <button>Open Github</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <img :src="Parkium" alt="" class="img-res" />
+        </div>
+        <div class="project-content">
+          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            magni ut minima earum quasi ad?</span>
+            <div class="project-btns">
+              <button>Open Website</button>
+              <button>Open Github</button>
+            </div>
         </div>
       </div>
     </div>
@@ -20,16 +67,52 @@ import Parkium from '../assets/projects/parkium.png'
 
 <style lang="scss" scoped>
 .projects-section {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+
+
+  .projects-title {
+    margin-block: 3rem;
+    font-size: clamp(1rem, 10vw, 2.5rem); 
+  }
 }
 
-.project-img {
-  width: 400px;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
+
+.project:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .project-btns {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
 
 </style>
