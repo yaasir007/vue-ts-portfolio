@@ -3,6 +3,7 @@ import Particles from './components/Particles.vue'
 import Nav from './components/Nav.vue'
 import Intro from "./components/Intro.vue"
 import About from './components/About.vue'
+import Projects from './components/Projects.vue'
 </script>
 
 <template>
@@ -10,5 +11,6 @@ import About from './components/About.vue'
   <Nav />
   <Intro />
   <About />
+  <Projects />
 </template>
 
