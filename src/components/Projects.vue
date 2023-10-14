@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Parkium from '../assets/projects/parkium.png'
 </script>
 
 <template>
@@ -6,7 +7,12 @@
     <div class="projects-title">Projects</div>
     <div class="projects-container">
       <div class="project">
-        <img src="" alt="">
+        <div class="project-img">
+          <img :src=Parkium alt="" class="img-res">
+        </div>
+        <div class="project-content">
+          <button>Open Website</button>
+        </div>
       </div>
     </div>
   </div>
@@ -18,6 +24,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-img {
+  width: 400px;
 }
 
 </style>
