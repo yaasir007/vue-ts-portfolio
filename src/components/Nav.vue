@@ -32,9 +32,9 @@ import Logo from '../assets/myc-logo.png'
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .nav-logo {
-    width: 40px;
+    .nav-logo {
+      width: 60px;
+    }
   }
   .nav-links {
     padding-right: 1.5rem;
