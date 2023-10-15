@@ -33,7 +33,7 @@ import Logo from '../assets/myc-logo.png'
     justify-content: center;
     align-items: center;
     .nav-logo {
-      width: 60px;
+      width: 65px;
     }
   }
   .nav-links {
