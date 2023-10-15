@@ -33,7 +33,7 @@ import Logo from '../assets/myc-logo.png'
     justify-content: center;
     align-items: center;
     .nav-logo {
-      width: 60px;
+      width: 65px;
     }
   }
   .nav-links {
@@ -48,10 +48,12 @@ import Logo from '../assets/myc-logo.png'
       font-size: 1.3rem;
       transition: all .2s ease-in;
       color: white;
+      transition: all .2s linear;
     }
 
     a:hover {
       color: #f59694;
+      transform: scale(1.08);
     }
   }
 }
