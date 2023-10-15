@@ -1,63 +1,78 @@
 <script setup lang="ts">
 import Parkium from "../assets/projects/parkium.jpeg";
+const Projects = [
+  {
+    img: Parkium,
+    title: "Parkium",
+    description: "The parking system project is a web application designed to simplify parking management using a combination of JavaScript, Rails, Ruby, Webpack, HTML, CSS, Bootstrap, SCSS, and Devise template.",
+    website: {
+      disabled: false,
+      link: "",
+    },
+    github: {
+      disabled: true,
+      link: "https://github.com/yaasir007/Parkium"
+    }
+  },
+  {
+    img: Parkium,
+    title: "Counter App",
+    description: "The counter project is a simple application built using React and Tailwind CSS. It allows users to increment, decrement, and reset a counter using a user-friendly interface. The project is responsive and easy to use, making it a great starting point for learning React and Tailwind CSS.",
+    website: {
+      disabled: true,
+      link: "https://counter-react-three-delta.vercel.app/",
+    },
+    github: {
+      disabled: false,
+      link: "https://github.com/yaasir007/landing-page"
+    }
+  },
+  {
+    img: Parkium,
+    title: "Joke Generator",
+    description: "The quote generator project is a web application built using JavaScript that fetches quotes from an API and displays them on the screen. The application features a user-friendly interface and allows users to generate new quotes by clicking a button. This project is a great way to get inspired, motivated, or entertained by reading quotes.",
+    website: {
+      disabled: true,
+      link: "https://fetch-quote-js.vercel.app/",
+    },
+    github: {
+      disabled: false,
+      link: "https://github.com/yaasir007/landing-page"
+    }
+  },
+  {
+    img: Parkium,
+    title: "Tic Tac Toe",
+    description: "The Tic Tac Toe app is a web application built using JavaScript that enables users to play the classic game of Tic Tac Toe against an AI opponent or another player. The application features a user-friendly interface and provides a fun and challenging way to pass the time while improving logical thinking and decision-making skills.",
+    website: {
+      disabled: true,
+      link: "https://tic-tac-toe-js-orpin.vercel.app/",
+    },
+    github: {
+      disabled: true,
+      link: "https://github.com/yaasir007/tic-tac-toe-js"
+    }
+  }
+
+];
 </script>
 
 <template>
   <div class="projects-section">
     <div class="projects-title">Projects</div>
     <div class="projects-container">
-      <div class="project">
+      <div v-for="project in Projects" class="project">
         <div class="project-img">
-          <img :src="Parkium" alt="" class="img-res" />
+          <img :src=project.img alt="" class="img-res" />
         </div>
-        <div class="project-content">
-          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-            magni ut minima earum quasi ad?</span>
+        <div class="project-content-container">
+          <div class="project-content">
+            <span class="project-title">{{ project.title }}</span>
+            <span class="project-description">{{ project.description }}</span>
+          </div>
             <div class="project-btns">
-              <button>Website</button>
-              <button>Github</button>
-            </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-img">
-          <img :src="Parkium" alt="" class="img-res" />
-        </div>
-        <div class="project-content">
-          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-            magni ut minima earum quasi ad?</span>
-            <div class="project-btns">
-              <button>Website</button>
-              <button>Github</button>
-            </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-img">
-          <img :src="Parkium" alt="" class="img-res" />
-        </div>
-        <div class="project-content">
-          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-            magni ut minima earum quasi ad?</span>
-            <div class="project-btns">
-              <button>Website</button>
-              <button>Github</button>
-            </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-img">
-          <img :src="Parkium" alt="" class="img-res" />
-        </div>
-        <div class="project-content">
-          <span class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-            magni ut minima earum quasi ad?</span>
-            <div class="project-btns">
-              <button>Website</button>
-              <button>Github</button>
+              <a v-if=project.website.disabled :href=project.website.link target="_blank" class="btn">Website</a>
+              <a v-if=project.github.disabled  :href=project.github.link target="_blank" class="btn">Github</a>
             </div>
         </div>
       </div>
@@ -72,11 +87,10 @@ import Parkium from "../assets/projects/parkium.jpeg";
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
-
+  gap: 3rem;
+  margin-block: 3rem;
 
   .projects-title {
-    margin-block: 3rem;
     font-size: clamp(1rem, 10vw, 2.5rem); 
   }
 }
@@ -87,26 +101,26 @@ import Parkium from "../assets/projects/parkium.jpeg";
   gap: 3rem;
 }
 
-.project:nth-child(even) {
+.project {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   gap: 2rem;
 }
 
-.project:nth-child(odd) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.project-content {
+.project-content-container {
   width: 55%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-block: 2rem;
+
+  .project-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
   .project-btns {
     display: flex;
@@ -118,7 +132,7 @@ import Parkium from "../assets/projects/parkium.jpeg";
   z-index: 999;
 }
 
-button {
+.btn {
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
@@ -147,16 +161,16 @@ button {
   font-size: 12px;
 }
 
-button:focus {
+.btn:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-button:hover {
+.btn:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-button:active {
+.btn:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
