@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import Parkium from "../assets/projects/parkium.jpeg";
+import Parkium from "../assets/projects/parkium.png";
+import CounterApp from "../assets/projects/counterApp.png";
+import QuoteGen from "../assets/projects/quoteGen.png";
+
 const Projects = [
   {
     img: Parkium,
@@ -15,7 +18,7 @@ const Projects = [
     }
   },
   {
-    img: Parkium,
+    img: CounterApp,
     title: "Counter App",
     description: "The counter project is a simple application built using React and Tailwind CSS. It allows users to increment, decrement, and reset a counter using a user-friendly interface. The project is responsive and easy to use, making it a great starting point for learning React and Tailwind CSS.",
     website: {
@@ -28,8 +31,8 @@ const Projects = [
     }
   },
   {
-    img: Parkium,
-    title: "Joke Generator",
+    img: QuoteGen,
+    title: "Quote Generator",
     description: "The quote generator project is a web application built using JavaScript that fetches quotes from an API and displays them on the screen. The application features a user-friendly interface and allows users to generate new quotes by clicking a button. This project is a great way to get inspired, motivated, or entertained by reading quotes.",
     website: {
       disabled: true,
@@ -129,6 +132,9 @@ const Projects = [
 }
 
 .project-img {
+  display: inline-block; /* or any other appropriate display property */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
+  background-clip: padding-box;
   z-index: 999;
 }
 
