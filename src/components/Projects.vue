@@ -101,7 +101,7 @@ const Projects = [
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .project {
@@ -115,14 +115,21 @@ const Projects = [
   width: 55%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-block: 2rem;
 
   .project-content {
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+
+    .project-title {
+      font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+    .project-description {
+      font-size: clamp(0.5rem, 5vw, 1.1rem);
+    }
   }
 
   .project-btns {
@@ -149,12 +156,11 @@ const Projects = [
   color: #36395A;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
   justify-content: center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding: 1rem;
+  padding: .8rem 1rem;
   position: relative;
   text-align: left;
   text-decoration: none;
@@ -164,7 +170,7 @@ const Projects = [
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .btn:focus {
