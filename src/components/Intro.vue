@@ -28,7 +28,8 @@ import Scroll from '../assets/scrollDown.svg'
     align-items: center;
     flex-direction: column;
     height: 77vh;
-    font-size: clamp(1rem, 10vw, 5rem); 
+    font-size: clamp(1rem, 10vw, 5rem);
+    z-index: 9999;
 
     .intro-name,
     .intro-job-title {

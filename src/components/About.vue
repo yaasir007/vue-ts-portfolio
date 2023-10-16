@@ -92,7 +92,17 @@ import Discord from '../assets/socials/discord.svg'
     .about-img {
       width: 400px;
       z-index: 9999;
-  }
+      filter: grayscale(3) blur(5px) brightness(.5);
+      transition: all .35s linear;
+    }
+    .about-img:hover {
+      filter: grayscale(0) blur(0px) brightness(.9);
+    }
+
+    .about-img > img {
+      box-shadow: 0px 0px 20px 4px #a60080;
+      border-radius: 31% 69% 36% 64% / 49% 54% 46% 51%;
+    }
   }
 }
 </style>
