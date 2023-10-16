@@ -40,7 +40,7 @@ import Scroll from '../assets/scrollDown.svg'
   .intro-scroll-down {
     height: 15vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     animation: upDown 1s infinite alternate;

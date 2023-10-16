@@ -71,6 +71,11 @@ import Discord from '../assets/socials/discord.svg'
       font-size: 1.3rem;
       gap: 1rem;
 
+      .about-title {
+        font-size: 1.6rem;
+        color: gold;
+      }
+
       .about-socials {
         display: flex;
         gap: 1rem;
@@ -84,7 +89,7 @@ import Discord from '../assets/socials/discord.svg'
 
       .about-job-title,
       .about-hashtags {
-        color: #a60080;
+        color: gold;
         text-transform: lowercase !important;
       }
     }
