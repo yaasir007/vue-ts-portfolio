@@ -94,7 +94,7 @@ const Projects = [
   margin-block: 3rem;
 
   .projects-title {
-    font-size: clamp(1rem, 10vw, 2.5rem); 
+    font-size: clamp(1rem, 10vw, 2.5rem);
   }
 }
 

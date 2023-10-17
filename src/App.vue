@@ -13,6 +13,6 @@ import Skills from './components/Skills.vue'
   <Intro />
   <About />
   <Projects />
-  <Skills />
+  <!-- <Skills /> -->
 </template>
 
