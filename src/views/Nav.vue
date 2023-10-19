@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router' 
 import Logo from '../assets/myc-logo.png'
 </script>
 
@@ -9,10 +10,9 @@ import Logo from '../assets/myc-logo.png'
     </div>
 
     <div class="nav-links">
-      <a href="about">About</a>
-      <a href="">Projects</a>
-      <a href="">Experiences</a>
-      <a href="">Articles</a>
+      <RouterLink active-class="active" to="/">Home</RouterLink>
+      <RouterLink active-class="active" to="/about">About</RouterLink>
+      <RouterLink active-class="active" to="/projects">Projects</RouterLink>
     </div>
   </div>
 </template>
