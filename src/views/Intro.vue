@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Scroll from '../assets/scrollDown.svg'
+// import Scroll from '../assets/scrollDown.svg'
 </script>
 
 <template>
