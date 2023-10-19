@@ -1,18 +1,12 @@
 <script setup lang="ts">
+import { RouterView } from 'vue-router' 
 import Particles from './components/Particles.vue'
-import Nav from './components/Nav.vue'
-import Intro from "./components/Intro.vue"
-import About from './components/About.vue'
-import Projects from './components/Projects.vue'
-import Skills from './components/Skills.vue'
+import Nav from '../src/views/Nav.vue'
 </script>
 
 <template>
   <Particles />
   <Nav />
-  <Intro />
-  <About />
-  <Projects />
-  <!-- <Skills /> -->
+  <RouterView />
 </template>
 

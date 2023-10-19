@@ -50,7 +50,7 @@ import Discord from '../assets/socials/discord.svg'
 
 <style lang="scss" scoped>
 .about-section {
-  height: 100vh;
+  height: 92vh;
   width: 100%;
   display: flex;
   justify-content: center;

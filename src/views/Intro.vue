@@ -8,15 +8,15 @@ import Scroll from '../assets/scrollDown.svg'
       <div class="intro-name">Yaasir Cheekoory</div>
       <div class="intro-job-title">Full Stack Engineer</div>
     </div>
-    <div class="intro-scroll-down">
+    <!-- <div class="intro-scroll-down">
       <img :src=Scroll alt="" class="intro-scroll">
-    </div>
+    </div> -->
   </div>
 </template>
 
 <style lang="scss" scoped>
 .intro-section {
-  height: 92vh;
+  height: 88vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
