@@ -13,6 +13,7 @@ import Logo from '../assets/myc-logo.png'
       <RouterLink active-class="active" to="/">Home</RouterLink>
       <RouterLink active-class="active" to="/about">About</RouterLink>
       <RouterLink active-class="active" to="/projects">Projects</RouterLink>
+      <RouterLink active-class="active" to="#">Tools</RouterLink>
     </div>
   </div>
 </template>
