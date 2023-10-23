@@ -6,6 +6,7 @@ import Medium from '../assets/socials/medium.svg'
 import Slack from '../assets/socials/slack.svg'
 import Twitter from '../assets/socials/x.svg'
 import Discord from '../assets/socials/discord.svg'
+import Resume from '../assets/socials/resume.png'
 
 </script>
 
@@ -21,22 +22,39 @@ import Discord from '../assets/socials/discord.svg'
         </div>
         <div class="about-socials">
           <div class="social">
-            <img :src=Linkedin alt="Linkedin" class="img-res">
+            <a href="https://www.linkedin.com/in/yaasir007/" target="_blank">
+              <img :src=Linkedin alt="Linkedin" class="img-res">
+            </a>
           </div>
           <div class="social">
-            <img :src=Github alt="Github" class="img-res">
+            <a href="https://github.com/yaasir007" target="_blank">
+              <img :src=Github alt="Github" class="img-res">
+            </a>
           </div>
           <div class="social">
-            <img :src=Medium alt="Github" class="img-res">
+            <a href="https://medium.com/@yaasir007" target="_blank">
+              <img :src=Medium alt="Medium" class="img-res">
+            </a>
           </div>
           <div class="social">
-            <img :src=Slack alt="Github" class="img-res">
+            <a href="https://lewagon-alumni.slack.com/team/U02E51WTHCJ" target="_blank">
+              <img :src=Slack alt="Slack" class="img-res">
+            </a>
           </div>
           <div class="social">
-            <img :src=Twitter alt="Github" class="img-res">
+            <a href="https://twitter.com/yaasir_mohammad" target="_blank">
+              <img :src=Twitter alt="Twitter" class="img-res">
+            </a>
           </div>
           <div class="social">
-            <img :src=Discord alt="Github" class="img-res">
+            <a href="https://discord.com/channels/@me/1155718639228555264" target="_blank">
+              <img :src=Discord alt="Discord" class="img-res">
+            </a>
+          </div>
+          <div class="social">
+            <a :href=Resume download>
+              <img :src=Resume alt="Resume" class="img-res">
+            </a>
           </div>
         </div>
       </div>
