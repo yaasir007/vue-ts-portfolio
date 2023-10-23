@@ -7,6 +7,8 @@ import Slack from '../assets/socials/slack.svg'
 import Twitter from '../assets/socials/x.svg'
 import Discord from '../assets/socials/discord.svg'
 import Resume from '../assets/socials/resume.png'
+import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
+
 
 </script>
 
@@ -52,7 +54,7 @@ import Resume from '../assets/socials/resume.png'
             </a>
           </div>
           <div class="social">
-            <a :href=Resume download>
+            <a :href=ResumePDF download>
               <img :src=Resume alt="Resume" class="img-res">
             </a>
           </div>
