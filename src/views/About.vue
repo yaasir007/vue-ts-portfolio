@@ -70,6 +70,7 @@ import Discord from '../assets/socials/discord.svg'
       flex-direction: column;
       font-size: 1.3rem;
       gap: 1rem;
+      z-index: 999;
 
       .about-title {
         font-size: 1.6rem;
@@ -90,18 +91,14 @@ import Discord from '../assets/socials/discord.svg'
       .about-job-title,
       .about-hashtags {
         color: gold;
-        text-transform: lowercase !important;
       }
     }
 
     .about-img {
       width: 400px;
-      z-index: 9999;
-      filter: grayscale(3) blur(5px) brightness(.5);
+      z-index: -9;
+      filter: grayscale(.5px) blur(.5px) brightness(.7);
       transition: all .35s linear;
-    }
-    .about-img:hover {
-      filter: grayscale(0) blur(0px) brightness(.9);
     }
 
     .about-img > img {

@@ -56,7 +56,6 @@ const Projects = [
       link: "https://github.com/yaasir007/tic-tac-toe-js"
     }
   }
-
 ];
 </script>
 
@@ -95,6 +94,7 @@ const Projects = [
 
   .projects-title {
     font-size: clamp(1rem, 10vw, 2.5rem);
+    z-index: 999;
   }
 }
 
@@ -123,6 +123,7 @@ const Projects = [
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    z-index: 999;
 
     .project-title {
       font-size: clamp(1rem, 5vw, 1.5rem);
