@@ -95,16 +95,47 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       .about-title {
         font-size: 1.6rem;
         color: gold;
+        opacity: 0;  
+        animation: fadeIn 0.8s 0.3s ease-in forwards;
+      }
+
+      .about-description {
+        opacity: 0;  
+        animation: fadeIn 0.8s 0.6s ease-in forwards;
       }
 
       .about-socials {
         display: flex;
         gap: 1rem;
+        
         .social {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 2rem;
+          opacity: 0;  
+        }
+
+        .social:nth-child(1) {
+          animation: fadeIn 0.8s 1.2s ease-in forwards;
+        }
+        .social:nth-child(2) {
+          animation: fadeIn 0.8s 1.4s ease-in forwards;
+        }
+        .social:nth-child(3) {
+          animation: fadeIn 0.8s 1.6s ease-in forwards;
+        }
+        .social:nth-child(4) {
+          animation: fadeIn 0.8s 1.8s ease-in forwards;
+        }
+        .social:nth-child(5) {
+          animation: fadeIn 0.8s 2s ease-in forwards;
+        }
+        .social:nth-child(6) {
+          animation: fadeIn 0.8s 2.2s ease-in forwards;
+        }
+        .social:nth-child(7) {
+          animation: fadeIn 0.8s 2.4s ease-in forwards;
         }
       }
 
@@ -119,6 +150,9 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       z-index: -9;
       filter: grayscale(.5px) blur(.5px) brightness(.7);
       transition: all .35s linear;
+
+      opacity: 0;  
+      animation: fadeIn 0.8s 1.5s ease-in forwards;
     }
 
     .about-img > img {
