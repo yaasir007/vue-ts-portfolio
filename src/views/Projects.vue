@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import ScrollReveal from 'scrollreveal'
+
 import Parkium from "../assets/projects/parkium.png";
 import CounterApp from "../assets/projects/counterApp.png";
 import QuoteGen from "../assets/projects/quoteGen.png";
+import { onMounted } from 'vue';
 
 const Projects = [
   {
@@ -57,6 +60,12 @@ const Projects = [
     }
   }
 ];
+
+onMounted(() => {
+  ScrollReveal().reveal('.projects-title', { delay: 1500 });
+})
+
+
 </script>
 
 <template>
