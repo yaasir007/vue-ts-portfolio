@@ -32,3 +32,13 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #a60080;
 }
+
+@keyframes fadeIn {  
+  from {  
+      opacity:0;  
+  }  
+
+  to {  
+      opacity:1;  
+  }  
+}

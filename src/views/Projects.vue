@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import ScrollReveal from 'scrollreveal'
+
 import Parkium from "../assets/projects/parkium.png";
 import CounterApp from "../assets/projects/counterApp.png";
 import QuoteGen from "../assets/projects/quoteGen.png";
+import { onMounted } from 'vue';
 
 const Projects = [
   {
@@ -57,6 +60,12 @@ const Projects = [
     }
   }
 ];
+
+onMounted(() => {
+  ScrollReveal().reveal('.project', { delay: 400 });
+})
+
+
 </script>
 
 <template>
@@ -95,6 +104,9 @@ const Projects = [
   .projects-title {
     font-size: clamp(1rem, 10vw, 2.5rem);
     z-index: 999;
+    opacity: 0;
+    animation: fadeIn 0.5s 0.2s ease-in forwards;
+    color: #EF5962;
   }
 }
 
@@ -127,15 +139,21 @@ const Projects = [
 
     .project-title {
       font-size: clamp(1rem, 5vw, 1.5rem);
+      opacity: 0;
+      animation: fadeIn 0.5s 0.5s ease-in forwards;
     }
     .project-description {
       font-size: clamp(0.5rem, 5vw, 1.1rem);
+      opacity: 0;
+      animation: fadeIn 0.5s 0.7s ease-in forwards;
     }
   }
 
   .project-btns {
     display: flex;
     gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.5s 0.9s ease-in forwards;
   }
 }
 
@@ -144,6 +162,8 @@ const Projects = [
   border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
   background-clip: padding-box;
   z-index: 999;
+  opacity: 0;
+  animation: fadeIn 0.5s 0.5s ease-in forwards;
 }
 
 .btn {

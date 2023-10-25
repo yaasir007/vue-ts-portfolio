@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import Scroll from '../assets/scrollDown.svg'
 </script>
 
 <template>
@@ -8,9 +7,6 @@
       <div class="intro-name">Yaasir Cheekoory</div>
       <div class="intro-job-title">Full Stack Engineer</div>
     </div>
-    <!-- <div class="intro-scroll-down">
-      <img :src=Scroll alt="" class="intro-scroll">
-    </div> -->
   </div>
 </template>
 
@@ -35,29 +31,16 @@
     .intro-job-title {
       letter-spacing: 5px;
     }
-  }
 
-  .intro-scroll-down {
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    animation: upDown 1s infinite alternate;
+    .intro-name {
+      opacity: 0;  
+      animation: fadeIn 0.8s 0.3s ease-in forwards;
+    }
 
-    .intro-scroll {
-      width: 2rem;
+    .intro-job-title {
+      opacity: 0;  
+      animation: fadeIn 0.8s 0.8s ease-in forwards;
     }
   }
-
-  @keyframes upDown {
-    0% {
-      transform: translateY(1rem);
-    }
-    100% {
-      transform: translateY(-1rem);
-    }
-  }
-  
 }
 </style>
