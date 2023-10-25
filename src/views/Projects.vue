@@ -106,6 +106,7 @@ onMounted(() => {
     z-index: 999;
     opacity: 0;
     animation: fadeIn 0.5s 0.2s ease-in forwards;
+    color: #EF5962;
   }
 }
 

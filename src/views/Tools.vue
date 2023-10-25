@@ -51,9 +51,12 @@
   }
 
   .tools-title {
+    color: #EF5962;
     z-index: 999;
     text-align: center;
     font-size: clamp(1rem, 10vw, 2.5rem);
+    opacity: 0;
+    animation: fadeIn 0.3s .5s ease-in forwards;
   }
 
   .tools-container {
@@ -65,26 +68,15 @@
     gap: 2rem;
   }
 
-  .topic-sec:nth-child(1) {
-    // opacity: 0;
+  .topic-sec {
+    opacity: 0;
+    color: #EF5962;
     animation: fadeIn 0.3s .7s ease-in forwards;
   }
-  .topic-sec:nth-child(2) {
-    animation: fadeIn 0.5s 1.4s ease-in forwards;
-  }
-  .topic-sec:nth-child(3) {
-    animation: fadeIn 0.7s 2.1s ease-in forwards;
-  }
-  .topic-sec:nth-child(4) {
-    animation: fadeIn 0.9s 2.8s ease-in forwards;
-  }
 
-    .value-sec {
-      opacity: 0;
-    }
-    .value-sec:nth-child(1) {
-      animation: fadeIn 0.9s 1s ease-in forwards;
-    }
+  .value-sec {
+    opacity: 0;
+    animation: fadeIn 0.9s 1s ease-in forwards;
+  }
 }
-
 </style>
