@@ -1,0 +1,117 @@
+{
+  "img": "Parkium",
+  "title": "Parkium",
+  "description": "The parking system project is a web application designed to simplify parking management using a combination of JavaScript, Rails, Ruby, Webpack, HTML, CSS, Bootstrap, SCSS, and Devise template.",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/Parkium"
+  }
+},
+{
+  "img": "RentMe",
+  "title": "RentMe",
+  "description": "The car renting project is a Ruby on Rails web application that enables users to rent cars for a specific period. The application features user authentication, car booking and payment processing. It provides a user-friendly interface for browsing available cars, checking their availability, and making a booking reservation.",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/RentMe"
+  }
+},
+{
+  "img": "Simple Airbnb",
+  "title": "Simple Airbnb",
+  "description": "The simple Airbnb project is a Ruby on Rails web application that allows users to search and book available lodging based on specified criteria. The application features a user-friendly interface, integrated messaging system, and user authentication. This project provides a basic but functional template for developing a similar platform.",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/Rails-Simple-Airbnb"
+  }
+},
+{
+  "img": "Task Manager",
+  "title": "Task Manager",
+  "description": "Full CRUD System Web Application",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/Rails-Task-Manager"
+  }
+},
+{
+  "img": "Simple Facebook",
+  "title": "Simple Facebook",
+  "description": "The simple Facebook project is a web application built using HTML, SCSS, JavaScript, and Ruby on Rails that provides basic functionalities similar to Facebook. The application features user authentication, a news feed, post creation, comments, and likes. This project serves as a starting point for developing a full-fledged social media platform.",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/simple-fb"
+  }
+},
+{
+  "img": "Todo",
+  "title": "Todo Rails and Vue 3",
+  "description": "Introducing our Todo App with Rails and Vue 3: Streamlined Task Management Made Easy! This powerful web application combines the robustness of Ruby on Rails with the dynamic front-end capabilities of Vue 3, offering a seamless and efficient way to organize your tasks. Stay organized, boost productivity, and accomplish more with our Todo App today!",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/todo-rails-vue"
+  }
+},
+{
+  "img": "Food Delivery",
+  "title": "Food Delivery App",
+  "description": "A Ruby-based program that perform as a Food Delivery App",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/list-meals-customers"
+  }
+},
+{
+  "img": "Recipe Scrapper",
+  "title": "Recipe Scrapper",
+  "description": "The recipe web scraper project is a Ruby-based program that scrapes recipe websites for ingredients and instructions, storing them in CSV format. The program automates the process of manually copying recipes, making it easier for users to collect and organize recipes. The CSV format makes it simple to view and sort recipes in a spreadsheet program.",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/recipe-scrapper"
+  }
+},
+{
+  "img": "Vue Routing App",
+  "title": "Vue Routing App",
+  "description": "Vue 3 App with vue-router",
+  "website": {
+    "disabled": false,
+    "link": ""
+  },
+  "github": {
+    "disabled": true,
+    "link": "https://github.com/yaasir007/vue-routing-app"
+  }
+},
