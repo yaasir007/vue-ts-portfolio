@@ -10,10 +10,10 @@ import Logo from '../assets/myc-logo.png'
     </div>
 
     <div class="nav-links">
-      <RouterLink active-class="active" to="/">Home</RouterLink>
-      <RouterLink active-class="active" to="/about">About</RouterLink>
-      <RouterLink active-class="active" to="/projects">Projects</RouterLink>
-      <RouterLink active-class="active" to="/tools">Tools</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/">Home</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/about">About</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/projects">Projects</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/tools">Tools</RouterLink>
     </div>
   </div>
 </template>
@@ -35,6 +35,8 @@ import Logo from '../assets/myc-logo.png'
     align-items: center;
     .nav-logo {
       width: 65px;
+      opacity: 0;  
+      animation: fadeIn 0.8s 0.3s ease-in forwards;
     }
   }
   .nav-links {
@@ -44,15 +46,32 @@ import Logo from '../assets/myc-logo.png'
     align-items: center;
     gap: 2.5rem;
 
-    a {
+    .nav-link {
       text-decoration: none;
       font-size: 1.3rem;
       transition: all .2s ease-in;
       color: white;
       transition: all .2s linear;
+      opacity: 0;  
     }
 
-    a:hover {
+    .nav-link:nth-child(1) {
+      animation: fadeIn 0.8s 0.4s ease-in forwards;
+    }
+    .nav-link:nth-child(2) {
+      animation: fadeIn 0.8s 0.5s ease-in forwards;
+    }
+    .nav-link:nth-child(3) {
+      animation: fadeIn 0.8s 0.6s ease-in forwards;
+    }
+    .nav-link:nth-child(4) {
+      animation: fadeIn 0.8s 0.7s ease-in forwards;
+    }
+    .nav-link:nth-child(5) {
+      animation: fadeIn 0.8s 0.8s ease-in forwards;
+    }
+
+    .nav-link:hover {
       color: #f59694;
       transform: scale(1.08);
     }

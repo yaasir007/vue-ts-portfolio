@@ -39,7 +39,7 @@
 
     .intro-job-title {
       opacity: 0;  
-      animation: fadeIn 0.8s 0.7s ease-in forwards;
+      animation: fadeIn 0.8s 0.8s ease-in forwards;
     }
   }
 }
