@@ -89,29 +89,3 @@
     "link": "https://github.com/yaasir007/list-meals-customers"
   }
 },
-{
-  "img": "Recipe Scrapper",
-  "title": "Recipe Scrapper",
-  "description": "The recipe web scraper project is a Ruby-based program that scrapes recipe websites for ingredients and instructions, storing them in CSV format. The program automates the process of manually copying recipes, making it easier for users to collect and organize recipes. The CSV format makes it simple to view and sort recipes in a spreadsheet program.",
-  "website": {
-    "disabled": false,
-    "link": ""
-  },
-  "github": {
-    "disabled": true,
-    "link": "https://github.com/yaasir007/recipe-scrapper"
-  }
-},
-{
-  "img": "Vue Routing App",
-  "title": "Vue Routing App",
-  "description": "Vue 3 App with vue-router",
-  "website": {
-    "disabled": false,
-    "link": ""
-  },
-  "github": {
-    "disabled": true,
-    "link": "https://github.com/yaasir007/vue-routing-app"
-  }
-},
