@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import ScrollReveal from 'scrollreveal'
+import ProjectsJson from '../data/projects.json'
 
 import Parkium from "../assets/projects/parkium.png";
 import CounterApp from "../assets/projects/counterApp.png";
 import QuoteGen from "../assets/projects/quoteGen.png";
 import { onMounted } from 'vue';
+
+console.log(ProjectsJson);
 
 const Projects = [
   {
@@ -64,15 +67,13 @@ const Projects = [
 onMounted(() => {
   ScrollReveal().reveal('.project', { delay: 400 });
 })
-
-
 </script>
 
 <template>
   <div class="projects-section">
     <div class="projects-title">Projects</div>
     <div class="projects-container">
-      <div v-for="project in Projects" class="project">
+      <div v-for="project in ProjectsJson" class="project">
         <div class="project-img">
           <img :src=project.img alt="" class="img-res" />
         </div>
@@ -159,11 +160,15 @@ onMounted(() => {
 
 .project-img {
   display: inline-block; /* or any other appropriate display property */
-  border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
   background-clip: padding-box;
   z-index: 999;
   opacity: 0;
   animation: fadeIn 0.5s 0.5s ease-in forwards;
+}
+
+.project-img > img {
+  object-fit: cover;
 }
 
 .btn {

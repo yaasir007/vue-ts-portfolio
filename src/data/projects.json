@@ -1,7 +1,7 @@
 [
   {
     "category": "vue",
-    "img": "Porfolio",
+    "img": "../assets/projects/counterApp.png",
     "title": "My Porfolio",
     "description": "Delve into my web developer portfolio, a testament to my skill and innovation. This dynamic showcase is built upon the robust foundation of Vue 3 and Vite, harnessing the power of TypeScript for seamless development.",
     "website": {
