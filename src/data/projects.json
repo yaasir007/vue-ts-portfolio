@@ -1,0 +1,408 @@
+[
+  {
+    "category": "vue",
+    "img": "Porfolio",
+    "title": "My Porfolio",
+    "description": "Delve into my web developer portfolio, a testament to my skill and innovation. This dynamic showcase is built upon the robust foundation of Vue 3 and Vite, harnessing the power of TypeScript for seamless development.",
+    "website": {
+      "disabled": true,
+      "link": "https://vue-ts-portfolio.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/vue-ts-portfolio"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "Parkium",
+    "title": "Parkium",
+    "description": "The parking system project is a web application designed to simplify parking management using a combination of JavaScript, Rails, Ruby, Webpack, HTML, CSS, Bootstrap, SCSS, and Devise template.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/Parkium"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "RentMe",
+    "title": "RentMe",
+    "description": "The car renting project is a Ruby on Rails web application that enables users to rent cars for a specific period. The application features user authentication, car booking and payment processing. It provides a user-friendly interface for browsing available cars, checking their availability, and making a booking reservation.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/RentMe"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "Simple Airbnb",
+    "title": "Simple Airbnb",
+    "description": "The simple Airbnb project is a Ruby on Rails web application that allows users to search and book available lodging based on specified criteria. The application features a user-friendly interface, integrated messaging system, and user authentication. This project provides a basic but functional template for developing a similar platform.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/Rails-Simple-Airbnb"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "Task Manager",
+    "title": "Task Manager",
+    "description": "Full CRUD System Web Application",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/Rails-Task-Manager"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "Simple Facebook",
+    "title": "Simple Facebook",
+    "description": "The simple Facebook project is a web application built using HTML, SCSS, JavaScript, and Ruby on Rails that provides basic functionalities similar to Facebook. The application features user authentication, a news feed, post creation, comments, and likes. This project serves as a starting point for developing a full-fledged social media platform.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/simple-fb"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "Todo",
+    "title": "Todo Rails and Vue 3",
+    "description": "Introducing our Todo App with Rails and Vue 3: Streamlined Task Management Made Easy! This powerful web application combines the robustness of Ruby on Rails with the dynamic front-end capabilities of Vue 3, offering a seamless and efficient way to organize your tasks. Stay organized, boost productivity, and accomplish more with our Todo App today!",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/todo-rails-vue"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "Food Delivery",
+    "title": "Food Delivery App",
+    "description": "A Ruby-based program that perform as a Food Delivery App",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/list-meals-customers"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "Recipe Scrapper",
+    "title": "Recipe Scrapper",
+    "description": "The recipe web scraper project is a Ruby-based program that scrapes recipe websites for ingredients and instructions, storing them in CSV format. The program automates the process of manually copying recipes, making it easier for users to collect and organize recipes. The CSV format makes it simple to view and sort recipes in a spreadsheet program.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/recipe-scrapper"
+    }
+  },
+  {
+    "category": "ruby",
+    "img": "World Map With Mapbox",
+    "title": "Form File Upload",
+    "description": "The Geocoding project is a Ruby on Rails application that utilizes geocoding APIs to convert address data into geographic coordinates. The application enables users to search for locations and obtain their coordinates, or add locations to a database with associated coordinates. This project provides a useful tool for location-based applications.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/Geocoding"
+    }
+  },
+  {
+    "category": "php",
+    "img": "Slider",
+    "title": "Dynamic Slider",
+    "description": "Dynamic sliders, crafted with PHP, HTML, CSS, and JavaScript, add interactive flair to your website. Engage users with smooth transitions and customizable content display. Elevate your web experience!",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/Dynamic-Slider"
+    }
+  },
+  {
+    "category": "php",
+    "img": "Form-File-Upload",
+    "title": "Form File Upload",
+    "description": "The file uploading project is a web application built using JavaScript and PHP that allows users to upload and manage files on a server. The application features a user-friendly interface and provides secure file uploading and management capabilities. This project is a useful tool for sharing files and managing file systems online.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/Form-File-Upload"
+    }
+  },
+  {
+    "category": "php",
+    "img": "Smart Online Parking System",
+    "title": "Form File Upload",
+    "description": "The parking system web application is a comprehensive solution designed to simplify the parking process. The application is built using HTML, CSS, Bootstrap, jQuery, Font Awesome, and PHP. It offers an intuitive user interface that allows users to quickly find and reserve parking spots. With also a credit system for the payment method.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/SOPS"
+    }
+  },
+  {
+    "category": "react",
+    "img": "Mortgage Calculator",
+    "title": "Mortgage Calculator",
+    "description": "A mortgage calculator is a web application that allows users to estimate their monthly mortgage payment. It is typically used by potential home buyers to determine how much they can afford to borrow. A mortgage calculator can be built using React JS, a popular JavaScript framework.",
+    "website": {
+      "disabled": true,
+      "link": "https://mortgage-calculator-gilt.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/mortgage-calculator"
+    }
+  },
+  {
+    "category": "react",
+    "img": "Airbnb Experience",
+    "title": "Airbnb Experience",
+    "description": "Exploring the world of React using components",
+    "website": {
+      "disabled": true,
+      "link": "https://react-airbnb-experience-psi.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/react-airbnb-experience"
+    }
+  },
+  {
+    "category": "react",
+    "img": "React Counter",
+    "title": "React Counter",
+    "description": "The counter project is a simple application built using React and Tailwind CSS. It allows users to increment, decrement, and reset a counter using a user-friendly interface. The project is responsive and easy to use, making it a great starting point for learning React and Tailwind CSS.",
+    "website": {
+      "disabled": true,
+      "link": "https://counter-react-three-delta.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/counter-react"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Drum Kit",
+    "title": "Drum Kit",
+    "description": "The drum playing project is a web application built using JavaScript that enables users to play virtual drums using their keyboard or mouse. The application features a user-friendly interface and responsive design, allowing users to create beats and rhythms. This project is a fun and interactive way to learn and practice drumming skills.",
+    "website": {
+      "disabled": true,
+      "link": "https://js-drum-kit-three.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/JS-Drum-Kit"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Calculator",
+    "title": "Calculator",
+    "description": "The calculator project is a web application built using JavaScript that performs basic arithmetic operations, such as addition, subtraction, multiplication, and division. The application features a user-friendly interface and responsive design, allowing users to input numbers and operators using either the keyboard or the calculator buttons.",
+    "website": {
+      "disabled": true,
+      "link": "https://yaasir007.github.io/js-calculator/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/js-calculator"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Pig Game",
+    "title": "Pig Game",
+    "description": "The Pig Game project is a classic dice game built using HTML, CSS, and vanilla JavaScript. Players take turns rolling dice and accumulating points, but must be careful not to roll a pig and lose all their points. The game includes a simple user interface and is a fun way to pass the time.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/pig-game"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Guess My Number",
+    "title": "Guess My Number",
+    "description": "Guess My Number is a simple and entertaining game built using HTML, CSS, and vanilla JavaScript. Players must guess a random number between 1 and 20, receiving feedback on whether their guess is too high or low. The game includes a score counter, making it a fun way to test your guessing skills.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/guess-my-number"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Play Piano",
+    "title": "Play Piano",
+    "description": "The piano playing project is a web application built using JavaScript that enables users to play virtual piano keys using their keyboard or mouse. The application features a user-friendly interface and responsive design, allowing users to create melodies and chords. This project is a fun and interactive way to learn and practice playing the piano.",
+    "website": {
+      "disabled": true,
+      "link": "https://yaasir007.github.io/play-piano-js/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/play-piano-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Puzzle",
+    "title": "Puzzle",
+    "description": "The puzzle project is a web application built using JavaScript and Tailwind CSS that enables users to solve jigsaw puzzles online. The application features a user-friendly interface and responsive design, allowing users to upload their own images and choose difficulty levels. This project is a fun and challenging way to pass the time.",
+    "website": {
+      "disabled": true,
+      "link": "https://yaasir007.github.io/puzzle-js/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/puzzle-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Todo App",
+    "title": "Todo App",
+    "description": "The simple todo app is a web application built using JavaScript that enables users to create and manage a to-do list. The application features a user-friendly interface and allows users to add, delete, and complete tasks. This project is a useful tool for organizing daily tasks and managing time effectively, all within a browser window.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/todo-app-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Joke Generator",
+    "title": "Joke Generator",
+    "description": "The joke generator project is a web application built using JavaScript that fetches jokes from an API and displays them on the screen. The application features a user-friendly interface and allows users to generate new jokes by clicking a button. This project is a fun and entertaining way to pass the time and learn new jokes.",
+    "website": {
+      "disabled": true,
+      "link": "https://yaasir007.github.io/joke-generator-js/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/joke-generator-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Search System",
+    "title": "Search System",
+    "description": "A simple search system",
+    "website": {
+      "disabled": true,
+      "link": "https://yaasir007.github.io/search-js/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/search-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Weather App",
+    "title": "Weather App",
+    "description": "The weather generator project is a web application built using JavaScript that fetches weather details from an API and displays them on the screen. The application features a user-friendly interface and allows users to search for weather details of different locations.",
+    "website": {
+      "disabled": false,
+      "link": ""
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/weather-app-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Weather App",
+    "title": "Weather App",
+    "description": "The quote generator project is a web application built using JavaScript that fetches quotes from an API and displays them on the screen. The application features a user-friendly interface and allows users to generate new quotes by clicking a button. This project is a great way to get inspired, motivated, or entertained by reading quotes.",
+    "website": {
+      "disabled": true,
+      "link": "https://fetch-quote-js.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/fetch-quote-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Tic-Tac-Toe App",
+    "title": "Tic-Tac-Toe App",
+    "description": "The Tic Tac Toe app is a web application built using JavaScript that enables users to play the classic game of Tic Tac Toe against an AI opponent or another player. The application features a user-friendly interface and provides a fun and challenging way to pass the time while improving logical thinking and decision-making skills.",
+    "website": {
+      "disabled": true,
+      "link": "https://tic-tac-toe-js-orpin.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/tic-tac-toe-js"
+    }
+  },
+  {
+    "category": "javascript",
+    "img": "Password Generator",
+    "title": "Password Generator",
+    "description": "The password generator project is a web application built using HTML, CSS, and plain JavaScript that generates a random, secure password based on user-defined criteria. The application allows users to select password length, characters included, and complexity level, providing a custom password that can be copied to the clipboard.",
+    "website": {
+      "disabled": true,
+      "link": "https://yaasir007.github.io/JS-Password-Generator/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/JS-Password-Generator"
+    }
+  }
+]
