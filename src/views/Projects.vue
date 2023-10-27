@@ -1,80 +1,22 @@
 <script setup lang="ts">
-import ScrollReveal from 'scrollreveal'
-
-import Parkium from "../assets/projects/parkium.png";
-import CounterApp from "../assets/projects/counterApp.png";
-import QuoteGen from "../assets/projects/quoteGen.png";
 import { onMounted } from 'vue';
+import ScrollReveal from 'scrollreveal'
+import ProjectsJson from '../data/projects.json'
 
-const Projects = [
-  {
-    img: Parkium,
-    title: "Parkium",
-    description: "The parking system project is a web application designed to simplify parking management using a combination of JavaScript, Rails, Ruby, Webpack, HTML, CSS, Bootstrap, SCSS, and Devise template.",
-    website: {
-      disabled: false,
-      link: "",
-    },
-    github: {
-      disabled: true,
-      link: "https://github.com/yaasir007/Parkium"
-    }
-  },
-  {
-    img: CounterApp,
-    title: "Counter App",
-    description: "The counter project is a simple application built using React and Tailwind CSS. It allows users to increment, decrement, and reset a counter using a user-friendly interface. The project is responsive and easy to use, making it a great starting point for learning React and Tailwind CSS.",
-    website: {
-      disabled: true,
-      link: "https://counter-react-three-delta.vercel.app/",
-    },
-    github: {
-      disabled: false,
-      link: "https://github.com/yaasir007/landing-page"
-    }
-  },
-  {
-    img: QuoteGen,
-    title: "Quote Generator",
-    description: "The quote generator project is a web application built using JavaScript that fetches quotes from an API and displays them on the screen. The application features a user-friendly interface and allows users to generate new quotes by clicking a button. This project is a great way to get inspired, motivated, or entertained by reading quotes.",
-    website: {
-      disabled: true,
-      link: "https://fetch-quote-js.vercel.app/",
-    },
-    github: {
-      disabled: false,
-      link: "https://github.com/yaasir007/landing-page"
-    }
-  },
-  {
-    img: Parkium,
-    title: "Tic Tac Toe",
-    description: "The Tic Tac Toe app is a web application built using JavaScript that enables users to play the classic game of Tic Tac Toe against an AI opponent or another player. The application features a user-friendly interface and provides a fun and challenging way to pass the time while improving logical thinking and decision-making skills.",
-    website: {
-      disabled: true,
-      link: "https://tic-tac-toe-js-orpin.vercel.app/",
-    },
-    github: {
-      disabled: true,
-      link: "https://github.com/yaasir007/tic-tac-toe-js"
-    }
-  }
-];
+import incoming from "../assets/projects/incoming.png";
 
 onMounted(() => {
   ScrollReveal().reveal('.project', { delay: 400 });
 })
-
-
 </script>
 
 <template>
   <div class="projects-section">
     <div class="projects-title">Projects</div>
     <div class="projects-container">
-      <div v-for="project in Projects" class="project">
+      <div v-for="project in ProjectsJson" class="project">
         <div class="project-img">
-          <img :src=project.img alt="" class="img-res" />
+          <img :src=incoming alt="" class="img-res" />
         </div>
         <div class="project-content-container">
           <div class="project-content">
@@ -159,11 +101,17 @@ onMounted(() => {
 
 .project-img {
   display: inline-block; /* or any other appropriate display property */
-  border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
   background-clip: padding-box;
   z-index: 999;
   opacity: 0;
   animation: fadeIn 0.5s 0.5s ease-in forwards;
+}
+
+.project-img > img {
+  object-fit: cover;
+  max-width: 400px;
+  max-height: 250px;
 }
 
 .btn {
