@@ -9,7 +9,7 @@
         <div class="languages">
           <p class="topic-sec">Languages: </p>
           <span class="value-sec">
-            Ruby, HTML5, CSS3, JavaScript, TypeScript, SQL, PHP, VB, SASS, 
+            Ruby, HTML5, CSS3, JavaScript, TypeScript, SQL, PHP, VB, SASS.
           </span>
         </div>
         <div class="tools-sec">
@@ -26,7 +26,7 @@
         </div>
         <div class="project-mgmt">
           <p class="topic-sec">Project Management: </p>
-          <span class="value-sec">AGILE, JIRA, GitHub, GitLab, Trello</span>
+          <span class="value-sec">AGILE, SCRUM, JIRA, GitHub, GitLab, Trello</span>
         </div>
       </div>
     </div>
