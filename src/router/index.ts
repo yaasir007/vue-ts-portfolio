@@ -3,6 +3,7 @@ import Intro from '../views/Intro.vue'
 import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
 import Tools from '../views/Tools.vue'
+import Experience from '../views/Experience.vue'
 
 
 const router = createRouter({
@@ -17,6 +18,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/experience',
+      name: 'experience',
+      component: Experience
     },
     {
       path: '/projects',
