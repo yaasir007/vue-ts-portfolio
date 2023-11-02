@@ -3,7 +3,6 @@
 
 <template>
   <div class="experience-container">
-    <p>Coming Soon</p>
   </div>
 </template>
 
