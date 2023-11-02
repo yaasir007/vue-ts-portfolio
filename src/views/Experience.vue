@@ -299,7 +299,7 @@ onMounted(() => {
 }
 
 .present {
-  color: #FF9090;
+  color: #EF5962;
 }
 
 .exp-details {
@@ -335,7 +335,7 @@ onMounted(() => {
 .exp-description__title {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #FF9090;
+  color: #EF5962;
 }
 
 .exp-description ul li:not(.exp-description__title) {
