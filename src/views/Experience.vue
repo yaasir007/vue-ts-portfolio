@@ -313,17 +313,6 @@ onMounted(() => {
 
 .open {
   display: block;
-  animation: hideMe 1s forwards;
-}
-
-@keyframes hideMe {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .exp-description ul {
