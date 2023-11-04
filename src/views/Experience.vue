@@ -335,4 +335,10 @@ onMounted(() => {
   list-style: none;
 }
 
+@media screen and (max-width: 550px) {
+  .exp__duration {
+    display: none;
+  }
+}
+
 </style>
