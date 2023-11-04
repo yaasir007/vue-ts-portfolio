@@ -161,4 +161,14 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .about-content {
+    width: 80% !important;
+    gap: 1.5rem !important;
+  }
+  .about-img {
+    display: none;
+  }
+}
 </style>

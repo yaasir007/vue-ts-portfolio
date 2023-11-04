@@ -156,4 +156,22 @@ onMounted(() => {
   transform: translateY(2px);
 }
 
+@media screen and (max-width: 900px) {
+  .project-img {
+    display: none;
+  }
+
+  .project-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .project {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 </style>
