@@ -7,7 +7,7 @@ const particlesInit = async (engine: any) => {
 };
 
 const particlesLoaded = async (container: any) => {
-  console.log("Particles container loaded", container);
+  // console.log("Particles container loaded", container);
 };
 </script>
 

@@ -1,22 +1,10 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
 import ExperienceJson from '../data/experience.json'
 
-onMounted(() => {
-  const expItems = document.querySelectorAll(".exp-item");
+const openExperience = (index: number) => {
   const expDesps = document.querySelectorAll(".exp-description");
-  
-  for (let i = 0; i < expItems.length; i++) {
-    for (let j = 1; j < expDesps.length; j++) {
-      expItems[i].addEventListener("click", (e) => {
-        e.preventDefault();
-        expDesps[i].classList.toggle("open");
-      });
-    }
-  }
-  console.log(ExperienceJson);
-})
-
+  expDesps[index].classList.toggle("open");
+}
 </script>
 
 <template>
@@ -25,11 +13,11 @@ onMounted(() => {
       <div class="experience-wrapper">
         <div class="experience-title">Experiences</div>
         <div class="exp_main">
-          <!-- Xefi Mauritius -->
-
-
-
-          <div v-for="experience in ExperienceJson" class="exp-item">
+          <div 
+            v-for="experience, index in ExperienceJson"
+            @click="openExperience(index)" 
+            class="exp-item"
+          >
             <div class="exp-title__con">
               <div class="exp-details">
                 <span class="exp__companyName">
@@ -41,25 +29,26 @@ onMounted(() => {
               </div>
               <div class="exp__duration">
                 <div class="start_date">
-                  June 2023 - 
-                  <span class="present">Present</span>
+                  {{ experience.start_date }} -
+                  <span 
+                    v-if="experience.end_date === ''" 
+                    class="present"
+                  >
+                    Present
+                  </span>
+                  <span v-else>{{ experience.end_date }}</span>
                 </div>
               </div>
             </div>
             <div class="exp-description">
-              <ul>
-                <li class="exp-description__title">Responsibilities:</li>
-                <li>Handles both front and back of a web application</li>
-                <li>Maintain actual features</li>
-                <li>Creation of new features</li>
-                <li>Rails, Ruby, VueJs, Nuxt and Docker</li>
+              <div class="exp-description__title">Responsibilities:</div>
+              <ul 
+                v-for="resp, index in experience.responsibilities" class="single-description"
+              >
+                <li>{{ index + 1 }}. {{ resp }}</li>
               </ul>
             </div>
           </div>
-
-
-
-          
         </div>
       </div>
     </div>
@@ -203,6 +192,10 @@ onMounted(() => {
 
 .exp-description ul li:not(.exp-description__title) {
   padding-left: 1rem;
+}
+
+.single-description {
+  padding: .2rem;
 }
 
 .exp-description ul li {
