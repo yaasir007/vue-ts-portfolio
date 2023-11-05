@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import ExperienceJson from '../data/experience.json'
 
 onMounted(() => {
   const expItems = document.querySelectorAll(".exp-item");
@@ -13,7 +14,9 @@ onMounted(() => {
       });
     }
   }
+  console.log(ExperienceJson);
 })
+
 </script>
 
 <template>
@@ -23,14 +26,24 @@ onMounted(() => {
         <div class="experience-title">Experiences</div>
         <div class="exp_main">
           <!-- Xefi Mauritius -->
-          <div class="exp-item">
+
+
+
+          <div v-for="experience in ExperienceJson" class="exp-item">
             <div class="exp-title__con">
               <div class="exp-details">
-                <span class="exp__companyName">Xefi Mauritius</span>
-                <span class="exp__title">Ingénieur Développeur</span>
+                <span class="exp__companyName">
+                  {{ experience.company_name }}
+                </span>
+                <span class="exp__title">
+                  {{ experience.job_title }}
+                </span>
               </div>
               <div class="exp__duration">
-                June 2023 - <span class="present">Present</span>
+                <div class="start_date">
+                  June 2023 - 
+                  <span class="present">Present</span>
+                </div>
               </div>
             </div>
             <div class="exp-description">
@@ -43,179 +56,10 @@ onMounted(() => {
               </ul>
             </div>
           </div>
-          <!-- Le Wagon Mauritius -->
-          <div class="exp-item">
-            <div class="exp-title__con">
-              <div class="exp-details">
-                <span class="exp__companyName">Le Wagon Mauritius</span>
-                <span class="exp__title">Lecturer/Freelancer</span>
-              </div>
-              <div class="exp__duration">
-                April 2022 - <span class="present">Present</span>
-              </div>
-            </div>
-            <div class="exp-description">
-              <ul>
-                <li class="exp-description__title">Responsibilities:</li>
-                <li>
-                  Teaching programming using Ruby and core programming concepts.
-                </li>
-                <li>
-                  Mentoring and advising students on academic and career goals.
-                </li>
-                <li>
-                  Committed to continuous improvement and innovation in teaching
-                  and learning.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Dragon Electronics -->
-          <div class="exp-item">
-            <div class="exp-title__con">
-              <div class="exp-details">
-                <span class="exp__companyName">Dragon Electronics</span>
-                <span class="exp__title">Junior Full-Stack Developer</span>
-              </div>
-              <div class="exp__duration">May 2022 - July 2022</div>
-            </div>
-            <div class="exp-description">
-              <ul>
-                <li class="exp-description__title">Responsibilities:</li>
-                <li>
-                  Developed and maintained ecommerce website features using
-                  technologies such as PHP, jQuery and API.
-                </li>
-                <li>
-                  Improved website performance, stability, and scalability.
-                </li>
-                <li>Optimized website speed and page load times.</li>
-                <li>Troubleshoot and resolve website issues and bugs.</li>
-                <li>
-                  Designed on Figma, coded in PHP and implemented custom quizzes
-                  and competitions before deadlines that has increased web
-                  traffic by 40%.
-                </li>
-                <li>
-                  Upgraded many parts of the database to remove duplicate data
-                  from bulking the storage.
-                </li>
-                <li>
-                  Improved the payment system to allow efficient flow of the
-                  user experience.
-                </li>
-                <li>
-                  Enhanced a generator for admin reports to speed up the overall
-                  process by 15%.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- BDO Solutions S -->
-          <div class="exp-item">
-            <div class="exp-title__con">
-              <div class="exp-details">
-                <span class="exp__companyName">BDO Solutions</span>
-                <span class="exp__title">Senior IT Analyst</span>
-              </div>
-              <div class="exp__duration">Jan 2020 - May 2022</div>
-            </div>
-            <div class="exp-description">
-              <ul>
-                <li class="exp-description__title">Responsibilities:</li>
-                <li>
-                  Resolved user problems without dispatching technical support
-                  staff when possible.
-                </li>
-                <li>
-                  Guided, advised and informed Analysts as to appropriate
-                  procedures.
-                </li>
-                <li>Mentored new personnel on use of the system.</li>
-                <li>
-                  Performed frequent quality check of tickets and provided
-                  feedbacks.
-                </li>
-                <li>
-                  Constantly updating the knowledge base with new solutions to
-                  allow newbies to learn. • Volunteered to be part on new
-                  projects to upskill and be a valuable part of the team.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- BDO Solutions J -->
-          <div class="exp-item">
-            <div class="exp-title__con">
-              <div class="exp-details">
-                <span class="exp__companyName">BDO Solutions</span>
-                <span class="exp__title">Junior IT Analyst</span>
-              </div>
-              <div class="exp__duration">July 2019 - Dec 2019</div>
-            </div>
-            <div class="exp-description">
-              <ul>
-                <li class="exp-description__title">Responsibilities:</li>
-                <li>
-                  Provided support and management of incidents and service
-                  requests according to established IT Service Management (ITSM)
-                  processes and procedures.
-                </li>
-                <li>
-                  Ensured accurate recording of client and incidents details and
-                  troubleshooting progress.
-                </li>
-                <li>Resolved incidents and service requests.</li>
-                <li>
-                  Escalated incidents and service requests to higher support
-                  levels or specialist support teams in accordance with
-                  established ITSM processes and SLAs.
-                </li>
-                <li>
-                  Identified potential issues and act on these in accordance
-                  with the established ITSM processes.
-                </li>
-                <li>
-                  Maintained a high degree of customer service for all support
-                  queries, take ownership of user problems and be proactive when
-                  dealing with user issue.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Accenture Data-->
-          <div class="exp-item">
-            <div class="exp-title__con">
-              <div class="exp-details">
-                <span class="exp__companyName">Accenture</span>
-                <span class="exp__title">Data Management Associate</span>
-              </div>
-              <div class="exp__duration">April 2017 - Jun 2018</div>
-            </div>
-            <div class="exp-description">
-              <ul>
-                <li class="exp-description__title">Responsibilities:</li>
-                <li>Transferred data into database systems using keyboards.</li>
-                <li>
-                  Typed in data provided directly from customers input scanned
-                  forms.
-                </li>
-                <li>Verified data by comparing it to source documents.</li>
-                <li>
-                  Updated existing data and making sure that accuracy is met.
-                </li>
-                <li>
-                  Retrieved data from the database or electronic files as
-                  requested.
-                </li>
-                <li>Performed regular backups to ensure data preservation.</li>
-                <li>
-                  Sorted and organised paperwork after entering data to ensure
-                  it is not lost.
-                </li>
-              </ul>
-            </div>
-          </div>
+
+
+
+          
         </div>
       </div>
     </div>
@@ -307,6 +151,10 @@ onMounted(() => {
 
 .exp-item:nth-child(6) {
   animation: fadeIn 3.5s ease-in forwards;
+}
+
+.exp-item:nth-child(7) {
+  animation: fadeIn 4s ease-in forwards;
 }
 
 
