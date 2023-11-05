@@ -97,6 +97,7 @@ onMounted(() => {
     .project-title {
       font-size: clamp(1rem, 5vw, 1.5rem);
       opacity: 0;
+      text-decoration: underline;
       animation: fadeIn 0.5s 0.5s ease-in forwards;
     }
     .project-description {

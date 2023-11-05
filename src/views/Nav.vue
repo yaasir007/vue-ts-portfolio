@@ -6,7 +6,9 @@ import Logo from '../assets/myc-logo.png'
 <template>
   <div class="nav-section">
     <div class="nav-logo-container">
-      <img :src="Logo" alt="MYC" class="nav-logo">     
+      <RouterLink to="/">
+        <img :src="Logo" alt="MYC" class="nav-logo">     
+      </RouterLink>
     </div>
 
     <div class="nav-links">
