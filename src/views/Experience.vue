@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import ScrollReveal from 'scrollreveal';
+
 
 onMounted(() => {
   const expItems = document.querySelectorAll(".exp-item");
@@ -13,6 +15,8 @@ onMounted(() => {
       });
     }
   }
+
+  ScrollReveal().reveal('.exp-item', { delay: 400 });
 })
 </script>
 
@@ -277,6 +281,7 @@ onMounted(() => {
   cursor: pointer;
   transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 9999;
+  animation: fadeIn 2.5s 0.3s ease-in forwards;
 }
 
 .exp-item:hover {

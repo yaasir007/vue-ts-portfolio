@@ -44,12 +44,27 @@ onMounted(() => {
   margin-block: 3rem;
 
   .projects-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: clamp(1rem, 10vw, 2.5rem);
     z-index: 999;
     opacity: 0;
     animation: fadeIn 0.5s 0.2s ease-in forwards;
     color: #EF5962;
   }
+
+  .projects-title::after {
+  content: "";
+  border: 1px solid #EF5962;
+  width: 40%;
+  transition: all .3s linear;
+}
+
+.projects-title:hover::after {
+  width: 90%;
+}
 }
 
 .projects-container {
