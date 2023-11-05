@@ -284,6 +284,32 @@ onMounted(() => {
   transform: scale(105%);
 }
 
+.exp-item:nth-child(1) {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.exp-item:nth-child(2) {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.exp-item:nth-child(3) {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+
+.exp-item:nth-child(4) {
+  animation: fadeIn 2.5s ease-in forwards;
+}
+
+.exp-item:nth-child(5) {
+  animation: fadeIn 3s ease-in forwards;
+}
+
+.exp-item:nth-child(6) {
+  animation: fadeIn 3.5s ease-in forwards;
+}
+
+
 .exp-title__con {
   display: flex;
   justify-content: space-between;
