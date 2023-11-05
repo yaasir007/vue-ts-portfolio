@@ -1,0 +1,102 @@
+[
+  {
+    "company_name": "Xefi Mauritius",
+    "job_title": "Full Stack Engineer",
+    "start_date": "June 2023",
+    "end_date": "",
+    "responsibilities": [
+      "Handles both front and back of a web application",
+      "Maintain actual features",
+      "Creation of new features",
+      "Rails, Ruby, VueJs, Nuxt and Docker"
+    ]
+  },
+  {
+    "company_name": "Le Wagon Mauritius",
+    "job_title": "Lecturer - Freelancer",
+    "start_date": "April 2022",
+    "end_date": "",
+    "responsibilities": [
+      "Teaching programming using Ruby and core programming concepts.",
+      "Mentoring and advising students on academic and career goals.",
+      "Committed to continuous improvement and innovation in teaching and learning."
+    ]
+  },
+  {
+    "company_name": "FRCI",
+    "job_title": "Junior Web Developer",
+    "start_date": "July 2022",
+    "end_date": "Feb 2023",
+    "responsibilities": [
+      "Work on projects including web-based applications and database-backed websites.",
+      "Work within a team environment to address the programming needs of projects.",
+      "Participate in processes concerning the architecture of new applications to meet client needs.",
+      "Work in several programming languages and with a variety of database systems.",
+      "Review, analyse and modify web systems including documenting, designing, developing, testing, monitoring, and maintaining as specified by Management.",
+      "Participate in review and company meetings concerning projects and programs.",
+      "Document work-time and processes as specified by Management.",
+      "Responsible for meeting set goals and deadlines as determined by Management.",
+      "Provide solutions and exceed expectations of Web clients and Management.",
+      "Create database structure"
+    ]
+  },
+  {
+    "company_name": "Dragon Electronics",
+    "job_title": "Junior Full-Stack Developer",
+    "start_date": "May 2022",
+    "end_date": "July 2022",
+    "responsibilities": [
+      "Developed and maintained ecommerce website features using technologies such as PHP, jQuery and API.",
+      "Improved website performance, stability, and scalability.",
+      "Optimized website speed and page load times.",
+      "Troubleshoot and resolve website issues and bugs.",
+      "Designed on Figma, coded in PHP and implemented custom quizzes and competitions before deadlines that has increased web traffic by 40%.",
+      "Upgraded many parts of the database to remove duplicate data from bulking the storage.",
+      "Improved the payment system to allow efficient flow of the user experience.",
+      "Enhanced a generator for admin reports to speed up the overall process by 15%."
+    ]
+  },
+  {
+    "company_name": "BDO Solutions",
+    "job_title": "Senior IT Analyst",
+    "start_date": "Jan 2020",
+    "end_date": "May 2022",
+    "responsibilities": [
+      "Resolved user problems without dispatching technical support staff when possible.",
+      "Guided, advised and informed Analysts as to appropriate procedures.",
+      "Mentored new personnel on use of the system.",
+      "Performed frequent quality check of tickets and provided feedbacks.",
+      "Constantly updating the knowledge base with new solutions to allow newbies to learn.",
+      "Volunteered to be part on new projects to upskill and be a valuable part of the team."
+    ]
+  },
+  {
+    "company_name": "BDO Solutions",
+    "job_title": "Junior IT Analyst",
+    "start_date": "July 2019",
+    "end_date": "Dec 2019",
+    "responsibilities": [
+      "Provided support and management of incidents and service requests according to established IT Service Management (ITSM) processes and procedures.",
+      "Ensured accurate recording of client and incidents details and troubleshooting progress.",
+      "Resolved incidents and service requests.",
+      "scalated incidents and service requests to higher support levels or specialist support teams in accordance with established ITSM processes and SLAs.",
+      "Identified potential issues and act on these in accordance with the established ITSM processes.",
+      "Maintained a high degree of customer service for all support queries, take ownership of user problems and be proactive when dealing with user issue."
+    ]
+  },
+  {
+    "company_name": "Accenture",
+    "job_title": "Data Management Associate",
+    "start_date": "April 2017",
+    "end_date": "June 2018",
+    "responsibilities": [
+      "Transferred data into database systems using keyboards.",
+      "Typed in data provided directly from customers input scanned forms.",
+      "Verified data by comparing it to source documents.",
+      "Updated existing data and making sure that accuracy is met.",
+      "Retrieved data from the database or electronic files as requested.",
+      "Performed regular backups to ensure data preservation.",
+      "Sorted and organised paperwork after entering data to ensure it is not lost."
+    ]
+  }
+]
