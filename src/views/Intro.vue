@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router'
       <div class="intro-job-title">Full Stack Engineer</div>
       <div class="route-links">
         <RouterLink active-class="active" class="route-link" to="/about">About</RouterLink>
-        <RouterLink active-class="active" class="route-link" to="/experience">experience</RouterLink>
+        <RouterLink active-class="active" class="route-link" to="/work">experience</RouterLink>
         <RouterLink active-class="active" class="route-link" to="/projects">Projects</RouterLink>
         <RouterLink active-class="active" class="route-link" to="/tools">Tools</RouterLink>
       </div>
