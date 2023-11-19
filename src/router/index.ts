@@ -20,8 +20,8 @@ const router = createRouter({
       component: About
     },
     {
-      path: '/experience',
-      name: 'experience',
+      path: '/work',
+      name: 'Work',
       component: Experience
     },
     {
