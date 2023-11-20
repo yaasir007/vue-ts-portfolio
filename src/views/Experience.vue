@@ -11,7 +11,7 @@ const openExperience = (index: number) => {
   <section class="experience">
     <div class="experience-container">
       <div class="experience-wrapper">
-        <div class="experience-title">Experiences</div>
+        <div class="experience-title">Work</div>
         <div class="exp_main">
           <div 
             v-for="experience, index in ExperienceJson"
