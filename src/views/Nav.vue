@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router' 
+import { RouterLink } from 'vue-router'
 import Logo from '../assets/myc-logo.png'
 </script>
 
@@ -7,7 +7,7 @@ import Logo from '../assets/myc-logo.png'
   <div class="nav-section">
     <div class="nav-logo-container">
       <RouterLink to="/">
-        <img :src="Logo" alt="MYC" class="nav-logo">     
+        <img :src="Logo" alt="MYC" class="nav-logo">
       </RouterLink>
     </div>
 
@@ -38,7 +38,7 @@ import Logo from '../assets/myc-logo.png'
     align-items: center;
     .nav-logo {
       width: 65px;
-      opacity: 0;  
+      opacity: 0;
       animation: fadeIn 0.8s 0.3s ease-in forwards;
     }
   }
@@ -57,7 +57,7 @@ import Logo from '../assets/myc-logo.png'
       transition: all .2s ease-in;
       color: white;
       transition: all .2s linear;
-      opacity: 0;  
+      opacity: 0;
     }
 
     .nav-link:nth-child(1) {
