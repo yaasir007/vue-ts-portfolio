@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import ScrollReveal from 'scrollreveal'
 import ProjectsJson from '../data/projects.json'
 
-import incoming from "../assets/projects/incoming.png";
+const defaultImg = ref("https://shorturl.at/egnpA")
+
+const limitDescription = (description: string) => {
+  return description.substring(0, 135)
+}
 
 onMounted(() => {
   ScrollReveal().reveal('.project', { delay: 400 });
@@ -16,12 +20,12 @@ onMounted(() => {
     <div class="projects-container">
       <div v-for="project in ProjectsJson" class="project">
         <div class="project-img">
-          <img :src=incoming alt="" class="img-res" />
+          <img :src="project.img ? project.img : defaultImg" alt="" class="img-res" />
         </div>
         <div class="project-content-container">
           <div class="project-content">
             <span class="project-title">{{ project.title }}</span>
-            <span class="project-description">{{ project.description }}</span>
+            <span class="project-description">{{ limitDescription(project.description) }}...</span>
           </div>
             <div class="project-btns">
               <a v-if=project.website.disabled :href=project.website.link target="_blank" class="btn">Website</a>
@@ -117,7 +121,7 @@ onMounted(() => {
 
 .project-img {
   display: inline-block; /* or any other appropriate display property */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border width and opacity as needed */
   background-clip: padding-box;
   z-index: 999;
   opacity: 0;
@@ -126,6 +130,8 @@ onMounted(() => {
 
 .project-img > img {
   object-fit: cover;
+  width: 400px;
+  height: 250px;
   max-width: 400px;
   max-height: 250px;
 }
