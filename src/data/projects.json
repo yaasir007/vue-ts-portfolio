@@ -29,7 +29,7 @@
   },
   {
     "category": "ruby",
-    "img": "https://raw.githubusercontent.com/yaasir007/Parkium/master/screenshots/homepage.png",
+    "img": "https://raw.githubusercontent.com/yaasir007/Parkium/master/screenshots/user/user-homepage.png",
     "title": "Parkium",
     "description": "The parking system project is a web application designed to simplify parking management using a combination of JavaScript, Rails, Ruby, Webpack, HTML, CSS, Bootstrap, SCSS, and Devise template.",
     "website": {
@@ -43,7 +43,7 @@
   },
   {
     "category": "ruby",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/yaasir007/RentMe/master/screenshots/homepage1.png",
     "title": "RentMe",
     "description": "The car renting project is a Ruby on Rails web application that enables users to rent cars for a specific period. The application features user authentication, car booking and payment processing. It provides a user-friendly interface for browsing available cars, checking their availability, and making a booking reservation.",
     "website": {
@@ -53,6 +53,20 @@
     "github": {
       "disabled": true,
       "link": "https://github.com/yaasir007/RentMe"
+    }
+  },
+  {
+    "category": "vue",
+    "img": "https://raw.githubusercontent.com/yaasir007/todo-app-vue/master/src/assets/todo-vue.png",
+    "title": "ToDo App With LocalStorage",
+    "description": "Vue.js ToDo App: Add, mark, & remove tasks. Offline access with LocalStorage. Simple & efficient. Perfect for beginners.",
+    "website": {
+      "disabled": true,
+      "link": "https://todo-app-vue-coral.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/todo-app-vue"
     }
   },
   {

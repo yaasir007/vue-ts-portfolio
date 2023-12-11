@@ -126,14 +126,14 @@ onMounted(() => {
   z-index: 999;
   opacity: 0;
   animation: fadeIn 0.5s 0.5s ease-in forwards;
+  max-width: 400px;
+  max-height: 220px;
 }
 
 .project-img > img {
-  object-fit: cover;
+  background-size: cover;
   width: 400px;
-  height: 250px;
-  max-width: 400px;
-  max-height: 250px;
+  height: 215px;
 }
 
 .btn {
