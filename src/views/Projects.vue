@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import ScrollReveal from 'scrollreveal'
 import ProjectsJson from '../data/projects.json'
 
-const defaultImg = ref("https://shorturl.at/egnpA")
+const defaultImg = ref("https://i.pinimg.com/564x/5e/d5/8c/5ed58cbf79e583bfbab7016077008e28.jpg")
 
 const limitDescription = (description: string) => {
   return description.substring(0, 135)
