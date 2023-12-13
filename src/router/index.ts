@@ -4,6 +4,7 @@ import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
 import Tools from '../views/Tools.vue'
 import Experience from '../views/Experience.vue'
+import Articles from '../views/Articles.vue'
 
 
 const router = createRouter({
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/projects',
       name: 'projects',
       component: Projects
+    },
+    {
+      path: '/articles',
+      name: 'articles',
+      component: Articles
     },
     {
       path: '/tools',
