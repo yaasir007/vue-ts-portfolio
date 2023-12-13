@@ -1,17 +1,158 @@
 [
   {
-    "title": "Authentication and Authorization",
-    "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*leT1YPLnEdLhAb_bl-J8ZA.png",
-    "link": "https://medium.com/@yaasir007/authentication-and-authorization-f963f58846c6"
+    "title": "Fear of comparison amongst Devs",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*fSPnQ6fRgx2ZuZx1tjEpUQ.png",
+    "description": "Actually, this is my very first article ever. Since I am very certain that you must have experienced this kind of terror at some point in…",
+    "link": "https://yaasir007.medium.com/fear-of-comparison-amongst-devs-8877377557f9"
+  },
+  {
+    "title": "Know Your Web Worth",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0SuQrkKT3Df69d-Z-ikoBg.jpeg",
+    "description": "Lets start with a small story to grasp the context of this article.",
+    "link": "https://yaasir007.medium.com/know-your-web-worth-1b4e4eb7f46f"
+  },
+  {
+    "title": "Web Development: The Mental Game",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*rEaJ0_aThfFN2E1Dih1Sgg.png",
+    "description": "Attention Juniors and Entry Level Developers",
+    "link": "https://yaasir007.medium.com/web-development-the-mental-game-6489c53406e4"
   },
   {
     "title": "Key Takeaways of a Junior Web Dev",
-    "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*kOME1q5aPxExAQQg",
-    "link": "https://medium.com/@yaasir007/key-takeaways-of-a-junior-web-dev-80357d46ba94"
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*kOME1q5aPxExAQQg",
+    "description": "As a junior web developer, here are some key takeaways that I have learned throughout my journey:",
+    "link": "https://yaasir007.medium.com/key-takeaways-of-a-junior-web-dev-80357d46ba94"
   },
   {
-    "title": "Fear of comparison amongst Devs",
-    "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*fSPnQ6fRgx2ZuZx1tjEpUQ.png",
-    "link": "https://medium.com/@yaasir007/fear-of-comparison-amongst-devs-8877377557f9"
+    "title": "ActionCable in Rails: Enhancing Real-Time Communication",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Dcq_SzLRaaR16Ig6s16q0g.png",
+    "description": "ActionCable is a powerful feature in Ruby on Rails that allows developers to build real-time web applications with ease. Whether you're…",
+    "link": "https://yaasir007.medium.com/actioncable-in-rails-enhancing-real-time-communication-6752f4f9f7ea"
+  },
+  {
+    "title": "Why Ruby… here is why!",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DheHJB_fI43oFUharyPW6A.jpeg",
+    "description": "As a junior developer, you enter the exciting world of programming, and one of your first decisions is choosing the right programming…",
+    "link": "https://yaasir007.medium.com/why-ruby-there-is-why-607ec718117f"
+  },
+  {
+    "title": "Unlocking the Power of the MVC Framework in Rails",
+    "img": "https://miro.medium.com/v2/resize:fit:600/format:webp/1*V9zLUlsG29n_8GkIRoH73Q.png",
+    "description": "Ruby on Rails, commonly known as Rails, is a robust and developer-friendly web application framework. One of its defining features is the…",
+    "link": "https://yaasir007.medium.com/unlocking-the-power-of-the-mvc-framework-in-rails-906cea070d86"
+  },
+  {
+    "title": "Common HTTP Status codes 🧑‍💻",
+    "img": "https://miro.medium.com/v2/resize:fit:620/format:webp/1*LHrxmWjyX8l-SbI9ET2-3w.jpeg",
+    "description": "When you browse the internet, you might not always notice the intricate web of communication happening behind the scenes. Every time you…",
+    "link": "https://yaasir007.medium.com/common-http-status-codes-f5837a33ecfc"
+  },
+  {
+    "title": "Why HTML… here is why!",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*jObaSN3cLBxsl2AKGpY14g.jpeg",
+    "description": "HTML, which stands for HyperText Markup Language, is a fundamental technology used in web development. It is the standard markup language…",
+    "link": "https://yaasir007.medium.com/why-html-here-is-why-303b7708a0d2"
+  },
+  {
+    "title": "Why CSS… here is why!",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Z7oz-UE96cn06LU5Uid04g.jpeg",
+    "description": "When you open a web page, what captivates your attention first? Is it the harmonious color scheme, the elegant typography, or the seamless…",
+    "link": "https://yaasir007.medium.com/why-css-here-is-why-6b5f8b3682d5"
+  },
+  {
+    "title": "Why Javascript… here is why!",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*6pXKW0VzwB-BzsS6UhZndQ.png",
+    "description": "Have you ever wondered how web pages respond to your clicks, deliver real-time updates, or validate your inputs in forms? Enter JavaScript…",
+    "link": "https://yaasir007.medium.com/why-javascript-here-is-why-9e6472703f62"
+  },
+  {
+    "title": "RabbitMQ: The Messaging Broker",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*IZlO8VJUaR-WOEhugcnHAA.png",
+    "description": "In the world of distributed systems, communication between various components is essential. Whether it's coordinating tasks, sharing data…",
+    "link": "https://yaasir007.medium.com/rabbitmq-the-messaging-broker-664acc5801e9"
+  },
+  {
+    "title": "Authentication and Authorization",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*leT1YPLnEdLhAb_bl-J8ZA.png",
+    "description": "In the digital age, where access to data and services is a fundamental part of our lives, ensuring the security of these resources has…",
+    "link": "https://yaasir007.medium.com/authentication-and-authorization-f963f58846c6"
+  },
+  {
+    "title": "BEM CSS Framework",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*IL7H7BjDqNul9VynVrdEsA.jpeg",
+    "description": "Cascading Style Sheets (CSS) are the backbone of web design, responsible for the aesthetics and layout of web pages. While CSS is powerful…",
+    "link": "https://yaasir007.medium.com/bem-css-framework-building-modular-and-maintainable-styles-e946f65c9935"
+  },
+  {
+    "title": "Redis to a Ruby on Rails Application",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*cxCodhCirqBzjk0j04kkag.png",
+    "description": "Ruby on Rails is a powerful web application framework, but sometimes you need more than just a relational database to meet the demands of…",
+    "link": "https://yaasir007.medium.com/redis-to-a-ruby-on-rails-application-21c3105219a3"
+  },
+  {
+    "title": "Setting Your LinkedIn Profile for Success as a Web Developer",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*jarFusVfxe4uVAW8je1Kng.png",
+    "description": "In today's digital age, having a strong online presence is crucial for career success, especially for web developers. LinkedIn, the world's…",
+    "link": "https://yaasir007.medium.com/setting-your-linkedin-profile-for-success-as-a-web-developer-aa5c0632f349"
+  },
+  {
+    "title": "Git: Revolutionizing Version Control",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*xYiF9i9FfVrZGBFoSkxnsw.jpeg",
+    "description": "In the world of software development, efficient version control is paramount. It ensures that multiple developers can collaborate on a…",
+    "link": "https://yaasir007.medium.com/git-revolutionizing-version-control-0c0b60fcd4c5"
+  },
+  {
+    "title": "Exploring Firebase and its services",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*InEqLCtBc4K5N8sBqKSfIw.png",
+    "description": "Firebase is a popular and robust platform for developing mobile and web applications. Acquired by Google in 2014, Firebase has evolved into…",
+    "link": "https://yaasir007.medium.com/exploring-firebase-and-its-services-bca0212353b6"
+  },
+  {
+    "title": "Implementing Particles.js in Your Vue.js App: A Step-by-Step Guide",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*iE2fKQo2XVmG4xypvALiLA.png",
+    "description": "Vue.js is a popular JavaScript framework for building user interfaces, and it offers a versatile ecosystem of plugins and libraries that…",
+    "link": "https://yaasir007.medium.com/implementing-particles-js-in-your-vue-js-app-a-step-by-step-guide-598b87b81de6"
+  },
+  {
+    "title": "Boost Your Coding Efficiency with Visual Code Shortcuts",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*UDRCUIqIONJ24MhMpUYnNQ.jpeg",
+    "description": "Efficiency is the name of the game for developers, and when it comes to your integrated development environment (IDE), nothing beats the…",
+    "link": "https://yaasir007.medium.com/boost-your-coding-efficiency-with-visual-code-shortcuts-e095983e9d24"
+  },
+  {
+    "title": "Agile Web Development Methodology",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ZV6e92MkQaH0PcKLl4rNsg.png",
+    "description": "In the ever-evolving digital landscape, web development has become a critical aspect of any business's success. Traditional development…",
+    "link": "https://yaasir007.medium.com/agile-web-development-methodology-8a46e794aabe"
+  },
+  {
+    "title": "Exploring Different Web Development Methodologies",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*fPL3BxFrSpVRw8KmFqXvjg.jpeg",
+    "description": "Web development is a dynamic field that constantly evolves to meet the ever-changing demands of the internet. To manage the complexity of…",
+    "link": "https://yaasir007.medium.com/exploring-different-web-development-methodologies-a-simplified-guide-with-examples-4cdb499b298f"
+  },
+  {
+    "title": "How to Add Vuetify 3 to an Existing Vue 3 Project",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*iHmneEBIcmA6bJDOWwZSog.jpeg",
+    "description": "Vuetify 3 is a Material Design component framework for Vue.js 3. It provides a wide range of components, directives, and utilities for…",
+    "link": "https://yaasir007.medium.com/how-to-add-vuetify-3-to-an-existing-vue-3-project-13cd0409e78b"
+  },
+  {
+    "title": "Importance of REST in Ruby for Building Efficient Backend Services",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*i_yDE7Gdr8psbAzqMkXsKw.png",
+    "description": "In the world of web development, building efficient and scalable backend services is a crucial task. To achieve this, developers often turn…",
+    "link": "https://yaasir007.medium.com/importance-of-rest-in-ruby-for-building-efficient-backend-services-fb54d27e5c2d"
+  },
+  {
+    "title": "Websites vs Web Applications",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*cZPwN1zLUNXx9r93YHFH3g.png",
+    "description": "In the vast ocean of the internet, you might have stumbled upon two terms that seem to be swimming in the same waters: websites and web…",
+    "link": "https://yaasir007.medium.com/websites-vs-web-applications-ef2462162dec"
+  },
+  {
+    "title": "Creating Custom Error Pages in Nuxt 3",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*5_HaamNsm92aIAz7ZLy6og.png",
+    "description": "Error pages are an essential part of any web application, providing users with a clear and informative message when something goes wrong…",
+    "link": "https://yaasir007.medium.com/creating-custom-error-pages-in-nuxt-3-2c45b3f3e8f1"
   }
 ]

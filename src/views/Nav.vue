@@ -16,6 +16,7 @@ import Logo from '../assets/myc-logo.png'
       <RouterLink active-class="active" class="nav-link" to="/about">About</RouterLink>
       <RouterLink active-class="active" class="nav-link" to="/work">Work</RouterLink>
       <RouterLink active-class="active" class="nav-link" to="/projects">Projects</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/article">Articles</RouterLink>
       <RouterLink active-class="active" class="nav-link" to="/tools">Tools</RouterLink>
     </div>
   </div>
@@ -74,6 +75,9 @@ import Logo from '../assets/myc-logo.png'
     }
     .nav-link:nth-child(5) {
       animation: fadeIn 0.8s 0.8s ease-in forwards;
+    }
+    .nav-link:nth-child(6) {
+      animation: fadeIn 0.8s 0.9s ease-in forwards;
     }
 
     .nav-link:hover {
