@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router' 
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -19,6 +19,7 @@ import { RouterLink } from 'vue-router'
 
 <style lang="scss" scoped>
 .intro-section {
+  margin-top: 5rem;
   height: 88vh;
   display: flex;
   justify-content: space-between;
@@ -40,12 +41,12 @@ import { RouterLink } from 'vue-router'
     }
 
     .intro-name {
-      opacity: 0;  
+      opacity: 0;
       animation: fadeIn 0.8s 0.3s ease-in forwards;
     }
 
     .intro-job-title {
-      opacity: 0;  
+      opacity: 0;
       animation: fadeIn 0.8s 0.8s ease-in forwards;
     }
   }

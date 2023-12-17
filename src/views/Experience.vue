@@ -13,9 +13,9 @@ const openExperience = (index: number) => {
       <div class="experience-wrapper">
         <div class="experience-title">Work</div>
         <div class="exp_main">
-          <div 
+          <div
             v-for="experience, index in ExperienceJson"
-            @click="openExperience(index)" 
+            @click="openExperience(index)"
             class="exp-item"
           >
             <div class="exp-title__con">
@@ -30,8 +30,8 @@ const openExperience = (index: number) => {
               <div class="exp__duration">
                 <div class="start_date">
                   {{ experience.start_date }} -
-                  <span 
-                    v-if="experience.end_date === ''" 
+                  <span
+                    v-if="experience.end_date === ''"
                     class="present"
                   >
                     Present
@@ -42,7 +42,7 @@ const openExperience = (index: number) => {
             </div>
             <div class="exp-description">
               <div class="exp-description__title">Responsibilities:</div>
-              <ul 
+              <ul
                 v-for="resp, index in experience.responsibilities" class="single-description"
               >
                 <li>{{ index + 1 }}. {{ resp }}</li>
@@ -62,7 +62,7 @@ const openExperience = (index: number) => {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  margin-block: 3rem;
+  margin-block: 6rem;
 }
 
 .experience-title {

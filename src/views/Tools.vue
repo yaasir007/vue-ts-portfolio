@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block: 3rem;
+  margin-block: 6rem;
   margin-inline: 2rem;
 
   .tools-wrapper {
@@ -51,12 +51,26 @@
   }
 
   .tools-title {
-    color: #EF5962;
-    z-index: 999;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: clamp(1rem, 10vw, 2.5rem);
+    z-index: 999;
     opacity: 0;
-    animation: fadeIn 0.3s .5s ease-in forwards;
+    animation: fadeIn 0.5s 0.2s ease-in forwards;
+    color: #EF5962;
+  }
+
+  .tools-title::after {
+    content: "";
+    border: 1px solid #EF5962;
+    width: 5%;
+    transition: all .3s linear;
+  }
+
+  .tools-title:hover::after {
+    width: 12%;
   }
 
   .tools-container {

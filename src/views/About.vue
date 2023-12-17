@@ -75,6 +75,8 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
+
 
   .about-inner {
     height: fit-content;

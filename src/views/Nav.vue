@@ -24,7 +24,10 @@ import Logo from '../assets/myc-logo.png'
 
 <style lang="scss" scoped>
 .nav-section {
-  position: sticky;
+  z-index: 99999;
+  width: 100%;
+  position: fixed;
+  top: 0;
   height: 8vh;
   background-color: #373f7a;
   padding: .8rem;
