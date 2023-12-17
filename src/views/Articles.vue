@@ -44,7 +44,7 @@ onMounted(() => {
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  margin-block: 3rem;
+  margin-block: 6rem;
 
   .projects-title {
     display: flex;

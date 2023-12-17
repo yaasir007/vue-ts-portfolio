@@ -45,7 +45,7 @@ onMounted(() => {
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  margin-block: 3rem;
+  margin-block: 6rem;
 
   .projects-title {
     display: flex;
@@ -60,29 +60,29 @@ onMounted(() => {
   }
 
   .projects-title::after {
-  content: "";
-  border: 1px solid #EF5962;
-  width: 40%;
-  transition: all .3s linear;
-}
+    content: "";
+    border: 1px solid #EF5962;
+    width: 40%;
+    transition: all .3s linear;
+  }
 
-.projects-title:hover::after {
-  width: 90%;
-}
-}
+  .projects-title:hover::after {
+    width: 90%;
+  }
+  }
 
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-.project {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 2rem;
-}
+  .project {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2rem;
+  }
 
 .project-content-container {
   width: 55%;
