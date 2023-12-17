@@ -8,8 +8,6 @@ import Twitter from '../assets/socials/x.svg'
 import Discord from '../assets/socials/discord.svg'
 import Resume from '../assets/socials/resume.png'
 import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
-
-
 </script>
 
 <template>
@@ -18,7 +16,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       <div class="about-content">
         <div class="about-title">Hola geeks...</div>
         <div class="about-description">
-          Currently working at Xefi Mauritius as a <span class="about-job-title">Full Stack Dev</span> using modern technologies. 
+          Currently working at Xefi Mauritius as a <span class="about-job-title">Full Stack Dev</span> using modern technologies.
           <p>Explore my modern web portfolio: Ruby, JavaScript, Docker. Cutting-edge development for innovative web experiences. </p>
           <p class="about-hashtags">#WebDev #Ruby #JavaScript #Docker</p>
         </div>
@@ -95,25 +93,25 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       .about-title {
         font-size: 1.6rem;
         color: gold;
-        opacity: 0;  
+        opacity: 0;
         animation: fadeIn 0.8s 0.3s ease-in forwards;
       }
 
       .about-description {
-        opacity: 0;  
+        opacity: 0;
         animation: fadeIn 0.8s 0.6s ease-in forwards;
       }
 
       .about-socials {
         display: flex;
         gap: 1rem;
-        
+
         .social {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 2rem;
-          opacity: 0;  
+          opacity: 0;
         }
 
         .social:nth-child(1) {
@@ -151,7 +149,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       filter: grayscale(.5px) blur(.5px) brightness(.7);
       transition: all .35s linear;
 
-      opacity: 0;  
+      opacity: 0;
       animation: fadeIn 0.8s 1.5s ease-in forwards;
     }
 
