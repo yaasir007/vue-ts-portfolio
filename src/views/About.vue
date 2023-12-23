@@ -14,7 +14,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
   <div class="about-section">
     <div class="about-inner">
       <div class="about-content">
-        <div class="about-title">What's crackin', brainiacs?...</div>
+        <div class="about-title">What's crackin', brainiacs.!.</div>
         <div class="about-description">
           <span class="about-job-title">Full Stack Engineer</span> @ XEFI Mauritius
           <p>Love writing <RouterLink to="articles" class="about-job-title">articles</RouterLink> about my journey and knowledge.</p>
