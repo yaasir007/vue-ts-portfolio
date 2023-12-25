@@ -154,5 +154,11 @@
     "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*5_HaamNsm92aIAz7ZLy6og.png",
     "description": "Error pages are an essential part of any web application, providing users with a clear and informative message when something goes wrong…",
     "link": "https://yaasir007.medium.com/creating-custom-error-pages-in-nuxt-3-2c45b3f3e8f1"
+  },
+  {
+    "title": "localStorage made easy",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-Rq8qsqvuBiGUqdpw5lXAQ.png",
+    "description": "localStorage is a powerful tool in JavaScript that allows you to store data persistently in the user's browser. This data can be retrieved later, even after the browser has been closed and reopened.",
+    "link": "https://yaasir007.medium.com/localstorage-made-easy-47c492b3dc42"
   }
 ]
