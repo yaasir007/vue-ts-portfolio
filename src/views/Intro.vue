@@ -41,11 +41,13 @@ import { RouterLink } from 'vue-router'
     }
 
     .intro-name {
+      font-family: 'Bebas Neue', sans-serif;
       opacity: 0;
       animation: fadeIn 0.8s 0.3s ease-in forwards;
     }
 
     .intro-job-title {
+      font-family: 'Bebas Neue', sans-serif;
       opacity: 0;
       animation: fadeIn 0.8s 0.8s ease-in forwards;
     }
