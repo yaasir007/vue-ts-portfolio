@@ -20,7 +20,7 @@ onMounted(() => {
     <div class="projects-container">
       <div v-for="project in ProjectsJson" class="project">
         <div class="project-img">
-          <img :src="project.img ? project.img : defaultImg" alt="" class="img-res" />
+          <img :src="project.img ? project.img : defaultImg" alt="" class="img-res" loading="lazy" />
         </div>
         <div class="project-content-container">
           <div class="project-content">
