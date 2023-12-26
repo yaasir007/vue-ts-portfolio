@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +8,7 @@
 
 body {
   background-color: #1d244b;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   scroll-behavior: smooth;
   color: white;
   overflow-x: hidden;
@@ -33,12 +35,12 @@ body::-webkit-scrollbar-thumb {
   background: #a60080;
 }
 
-@keyframes fadeIn {  
-  from {  
-      opacity:0;  
-  }  
+@keyframes fadeIn {
+  from {
+      opacity:0;
+  }
 
-  to {  
-      opacity:1;  
-  }  
+  to {
+      opacity:1;
+  }
 }

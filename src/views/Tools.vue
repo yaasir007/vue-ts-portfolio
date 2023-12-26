@@ -55,7 +55,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: clamp(1rem, 10vw, 2.5rem);
+    font-size: clamp(1rem, 7vw, 2rem);
     z-index: 999;
     opacity: 0;
     animation: fadeIn 0.5s 0.2s ease-in forwards;
@@ -86,9 +86,11 @@
     opacity: 0;
     color: #EF5962;
     animation: fadeIn 0.3s .7s ease-in forwards;
+    font-size: 1.2rem;
   }
 
   .value-sec {
+    font-size: 1rem;
     opacity: 0;
     animation: fadeIn 0.9s 1s ease-in forwards;
   }
