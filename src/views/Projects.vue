@@ -52,7 +52,7 @@ onMounted(() => {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: clamp(1rem, 10vw, 2.5rem);
+    font-size: clamp(1rem, 7vw, 2rem);
     z-index: 999;
     opacity: 0;
     animation: fadeIn 0.5s 0.2s ease-in forwards;
@@ -99,13 +99,13 @@ onMounted(() => {
     z-index: 999;
 
     .project-title {
-      font-size: clamp(1rem, 5vw, 1.5rem);
+      font-size: clamp(1rem, 5vw, 1.3rem);
       opacity: 0;
       text-decoration: underline;
       animation: fadeIn 0.5s 0.5s ease-in forwards;
     }
     .project-description {
-      font-size: clamp(0.5rem, 5vw, 1.1rem);
+      font-size: clamp(0.5rem, 5vw, 0.8rem);
       opacity: 0;
       animation: fadeIn 0.5s 0.7s ease-in forwards;
     }
@@ -161,7 +161,7 @@ onMounted(() => {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .btn:focus {
