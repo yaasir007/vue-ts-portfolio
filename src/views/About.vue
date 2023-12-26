@@ -90,12 +90,12 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       display: flex;
       justify-content: flex-end;
       flex-direction: column;
-      font-size: 1.3rem;
+      font-size: 1rem;
       gap: 1rem;
       z-index: 999;
 
       .about-title {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         color: gold;
         opacity: 0;
         animation: fadeIn 0.8s 0.3s ease-in forwards;
@@ -114,7 +114,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 2rem;
+          width: 1.8rem;
           opacity: 0;
         }
 
