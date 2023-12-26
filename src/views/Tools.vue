@@ -15,7 +15,7 @@
         <div class="tools-sec">
           <p class="topic-sec">Developer Tools: </p>
           <span class="value-sec">
-            Visual Studio Code, RubyMine, Postman, Chrome, Sidekick, Firebase, Figma, Supabase
+            Visual Studio Code, RubyMine, Postman, Chrome, Sidekick, Arc, Firebase, Figma, Supabase
           </span>
         </div>
         <div class="frameworks">
