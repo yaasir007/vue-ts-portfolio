@@ -45,7 +45,7 @@ const openExperience = (index: number) => {
               <ul
                 v-for="resp, index in experience.responsibilities" class="single-description"
               >
-                <li>{{ index + 1 }}. {{ resp }}</li>
+                <li class="item-desc">{{ index + 1 }}. {{ resp }}</li>
               </ul>
             </div>
           </div>
@@ -70,7 +70,7 @@ const openExperience = (index: number) => {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: clamp(1rem, 10vw, 2.5rem);
+  font-size: clamp(1rem, 7vw, 2rem);
   z-index: 999;
   opacity: 0;
   animation: fadeIn 0.5s 0.2s ease-in forwards;
@@ -154,11 +154,11 @@ const openExperience = (index: number) => {
 }
 
 .exp__companyName {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .exp__duration {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .present {
@@ -174,6 +174,10 @@ const openExperience = (index: number) => {
   display: none;
 }
 
+.item-desc {
+  font-size: 0.8rem;
+}
+
 .open {
   display: block;
 }
@@ -186,7 +190,7 @@ const openExperience = (index: number) => {
 
 .exp-description__title {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: .8rem;
   color: #EF5962;
 }
 
