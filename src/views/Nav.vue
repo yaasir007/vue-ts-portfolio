@@ -55,8 +55,7 @@ import Logo from '../assets/myc-logo.png'
 
     .nav-link {
       text-decoration: none;
-      font-size: 1.3rem;
-      font-size: clamp(0.5rem, 5vw, 1.3rem);
+      font-size: clamp(0.3rem, 4vw, 1rem);
 
       transition: all .2s ease-in;
       color: white;
@@ -89,7 +88,7 @@ import Logo from '../assets/myc-logo.png'
     }
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 570px) {
     .nav-links {
       display: none;
     }
