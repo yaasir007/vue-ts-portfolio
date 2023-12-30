@@ -16,9 +16,9 @@ onMounted(() => {
 
 <template>
   <div class="projects-section">
-    <div class="projects-title">Articles</div>
+    <div class="projects-title">Blogs</div>
     <div class="projects-container">
-      <div v-for="project in ProjectsJson" class="project">
+      <div v-for="project in ProjectsJson.reverse()" class="project">
         <div class="project-img">
           <img :src="project.img ? project.img : defaultImg" alt="" class="img-res" loading="lazy" />
         </div>

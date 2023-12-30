@@ -160,5 +160,11 @@
     "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-Rq8qsqvuBiGUqdpw5lXAQ.png",
     "description": "localStorage is a powerful tool in JavaScript that allows you to store data persistently in the user's browser. This data can be retrieved later, even after the browser has been closed and reopened.",
     "link": "https://yaasir007.medium.com/localstorage-made-easy-47c492b3dc42"
+  },
+  {
+    "title": "Git Alias: My Developer Time Machine",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*MetftahErmauID9zvM5G3Q.jpeg",
+    "description": "Okay, picture this: You're a web developer, fingers flying across the keyboard, crafting web wonders. But then, BAM! You hit a wall: a long, cryptic Git command you haven't memorized. Ugh, the workflow grinds to a halt.",
+    "link": "https://yaasir007.medium.com/git-alias-my-developer-time-machine-3d737f39039c"
   }
 ]
