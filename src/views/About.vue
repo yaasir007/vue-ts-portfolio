@@ -16,7 +16,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       <div class="about-content">
         <div class="about-title">What's crackin', brainiacs.!.</div>
         <div class="about-description">
-          <span class="about-job-title">Full Stack Engineer</span> @ XEFI Mauritius
+          <span class="about-job-title">Full Stack Engineer</span> @XEFI Mauritius
           <p>Love writing <RouterLink to="articles" class="about-job-title">articles</RouterLink> about my journey and knowledge.</p>
           <p>Explore my modern web portfolio: Ruby, JavaScript, Docker. Cutting-edge development for innovative web experiences. </p>
           <p class="about-hashtags">#WebDev #Ruby #JavaScript #Docker</p>
