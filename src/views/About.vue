@@ -144,6 +144,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       .about-job-title,
       .about-hashtags {
         color: gold;
+        font-size: smaller;
       }
     }
 
