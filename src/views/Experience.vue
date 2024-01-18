@@ -207,6 +207,9 @@ const openExperience = (index: number) => {
 }
 
 @media screen and (max-width: 550px) {
+  .exp-item {
+    width: 90%;
+  }
   .exp__duration {
     display: none;
   }

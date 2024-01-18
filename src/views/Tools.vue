@@ -95,4 +95,10 @@
     animation: fadeIn 0.9s 1s ease-in forwards;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .tools .tools-wrapper {
+    width: 90%;
+  }
+}
 </style>

@@ -187,10 +187,11 @@ onMounted(() => {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 95%;
   }
 
   .project {
+    width: 95%;
     justify-content: center;
     align-items: center;
   }
