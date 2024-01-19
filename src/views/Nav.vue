@@ -12,12 +12,12 @@ import Logo from '../assets/myc-logo.png'
     </div>
 
     <div class="nav-links">
-      <RouterLink active-class="active" class="nav-link" to="/">Home</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/about">About</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/work">Works</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/projects">Projects</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/blogs">Blogs</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/tools">Tools</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/">&lt;Home&gt;</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/about">&lt;About&gt;</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/work">&lt;Works&gt;</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/projects">&lt;Projects&gt;</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/blogs">&lt;Blogs&gt;</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/tools">&lt;Tools&gt;</RouterLink>
     </div>
   </div>
 </template>
