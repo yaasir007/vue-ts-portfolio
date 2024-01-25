@@ -16,7 +16,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       <div class="about-content">
         <div class="about-title">What's crackin', brainiacs.!.</div>
         <div class="about-description">
-          <span class="about-job-title">Full Stack Engineer</span> @XEFI Mauritius
+          <span class="about-job-title">Front End Developer</span> <a href="https://www.neoshore.eu/" target="_blank" id="company-link">@NeoShore</a>
           <p>Love writing <RouterLink to="blogs" class="about-job-title">articles</RouterLink> about my journey and knowledge.</p>
           <p>Explore my modern web portfolio: Ruby, JavaScript, Docker. Cutting-edge development for innovative web experiences. </p>
           <p class="about-hashtags">#WebDev #Ruby #JavaScript #Docker</p>
@@ -104,6 +104,13 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       .about-description {
         opacity: 0;
         animation: fadeIn 0.8s 0.6s ease-in forwards;
+      }
+
+      #company-link {
+        all: unset;
+        color: hotpink;
+        text-decoration: underline;
+        cursor: pointer;
       }
 
       .about-socials {

@@ -51,7 +51,7 @@ import Logo from '../assets/myc-logo.png'
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
 
     .nav-link {
       text-decoration: none;
