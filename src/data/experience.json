@@ -1,5 +1,16 @@
 [
   {
+    "company_name": "Le Wagon Mauritius",
+    "job_title": "Lecturer",
+    "start_date": "April 2022",
+    "end_date": "",
+    "responsibilities": [
+      "Teaching programming using Ruby and core programming concepts.",
+      "Mentoring and advising students on academic and career goals.",
+      "Committed to continuous improvement and innovation in teaching and learning."
+    ]
+  },
+  {
     "company_name": "Xefi Mauritius",
     "job_title": "Full Stack Engineer",
     "start_date": "June 2023",
@@ -14,17 +25,6 @@
       "Participate in weekly technology trends meeting or present a trend",
       "Help out colleagues when they have problems with their code.",
       "Work on implementing major features."
-    ]
-  },
-  {
-    "company_name": "Le Wagon Mauritius",
-    "job_title": "Lecturer",
-    "start_date": "April 2022",
-    "end_date": "",
-    "responsibilities": [
-      "Teaching programming using Ruby and core programming concepts.",
-      "Mentoring and advising students on academic and career goals.",
-      "Committed to continuous improvement and innovation in teaching and learning."
     ]
   },
   {
