@@ -15,6 +15,20 @@
   },
   {
     "category": "vue",
+    "img": "https://raw.githubusercontent.com/yaasir007/infinite-scroll-vue/master/public/scroll.png",
+    "title": "Infinite Scrolling",
+    "description": "Scroll endlessly through captivating content! ⬇️ This Vue app uses smooth infinite scrolling to keep you exploring, whether it's stunning photos, insightful articles, or intriguing data. Dive in and never hit bottom! ✨ #Vue #InfiniteScroll #Explore",
+    "website": {
+      "disabled": true,
+      "link": "https://infinite-scroll-vue.vercel.app/"
+    },
+    "github": {
+      "disabled": true,
+      "link": "https://github.com/yaasir007/infinite-scroll-vue"
+    }
+  },
+  {
+    "category": "vue",
     "img": "https://raw.githubusercontent.com/yaasir007/unsplash-image-search/master/src/assets/unsplash_api.png",
     "title": "Unsplash API",
     "description": "Introducing Image Finder, a web application powered by React JS and the Unsplash API, designed to effortlessly search for images related to a specific name. Simply enter a name and let our app scour the vast collection of Unsplash to present you with a curated selection of relevant images.",
