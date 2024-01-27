@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 import MyImage from '../assets/my-image.jpg'
 import Linkedin from '../assets/socials/linkedin.svg'
 import Github from '../assets/socials/github.svg'
@@ -8,6 +10,8 @@ import Twitter from '../assets/socials/x.svg'
 import Discord from '../assets/socials/discord.svg'
 import Resume from '../assets/socials/resume.png'
 import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
+
+const neoShore = ref("https://www.neoshore.eu/")
 </script>
 
 <template>
@@ -16,7 +20,7 @@ import ResumePDF from '../assets/docs/M.Y.C-030923.pdf'
       <div class="about-content">
         <div class="about-title">What's crackin', brainiacs.!.</div>
         <div class="about-description">
-          <span class="about-job-title">Front End Developer</span> <a href="https://www.neoshore.eu/" target="_blank" id="company-link">@NeoShore</a>
+          <span class="about-job-title">Front End Developer</span> <a :href="neoShore" target="_blank" id="company-link">@NeoShore</a>
           <p>Love writing <RouterLink to="blogs" class="about-job-title">articles</RouterLink> about my journey and knowledge.</p>
           <p>Explore my modern web portfolio: Ruby, JavaScript, Docker. Cutting-edge development for innovative web experiences. </p>
           <p class="about-hashtags">#WebDev #Ruby #JavaScript #Docker</p>
