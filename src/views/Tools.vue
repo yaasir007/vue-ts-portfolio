@@ -1,104 +1,65 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import ToolAnimation from '../components/ToolAnimation.vue'
+
+const langs = ref(["Ruby", "HTML5", "CSS3", "JavaScript", "TypeScript", "SQL", "PHP", "Visual Basic", "C#"]);
+const devTools = ref(["git", "Visual Studio Code", "RubyMine", "Postman", "Chrome", "Sidekick", "Arc", "Edge", "Figma", "Firebase", "Supabase", "Adobe", "Docker", "Heroku"]);
+const frameworks = ref(["Tailwind", "VueJS", "ReactJS", "Nuxt", "Ruby on Rails", "Bootstrap", "Postgresql", "Drupal", "Wordpress", "Umbraco"]);
+const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monday"]);
 </script>
 
 <template>
-  <div class="tools">
-    <div class="tools-wrapper">
-      <div class="tools-title">Tools</div>
-      <div class="tools-container">
-        <div class="languages">
-          <p class="topic-sec">Languages: </p>
-          <span class="value-sec">
-            Ruby, HTML5, CSS3, JavaScript, TypeScript, SQL, PHP, VB, SASS.
-          </span>
-        </div>
-        <div class="tools-sec">
-          <p class="topic-sec">Developer Tools: </p>
-          <span class="value-sec">
-            Visual Studio Code, RubyMine, Postman, Chrome, Sidekick, Arc, Firebase, Figma, Supabase
-          </span>
-        </div>
-        <div class="frameworks">
-          <p class="topic-sec">Technologies/Frameworks: </p>
-          <span class="value-sec">
-            git, Tailwind CSS, VueJS, ReactJS, Nuxt, Ruby on Rails, Docker, Azure, Heroku, Scalingo, Rspec, Bootstrap, jQuery, Postgresql, Drupal, Wordpress, Umbraco
-          </span>
-        </div>
-        <div class="project-mgmt">
-          <p class="topic-sec">Project Management: </p>
-          <span class="value-sec">AGILE, SCRUM, JIRA, GitHub, GitLab, Trello</span>
-        </div>
-      </div>
+  <div class="tool-wrapper">
+    <div class="tool-title">Tools</div>
+    <div class="scroll-container">
+      <ToolAnimation timing="--time:40s" cssClass="scroll" :items=langs />
+      <ToolAnimation timing="--time:50s" cssClass="scroll-reverse" :items=devTools />
+      <ToolAnimation timing="--time:40s" cssClass="scroll" :items=frameworks />
+      <ToolAnimation timing="--time:50s" cssClass="scroll-reverse" :items=mgmt />
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-.tools {
-  width: 100%;
+<style scoped>
+.tool-wrapper {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 3rem;
   margin-block: 6rem;
-  margin-inline: 2rem;
-
-  .tools-wrapper {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  .tools-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: clamp(1rem, 7vw, 2rem);
-    z-index: 999;
-    opacity: 0;
-    animation: fadeIn 0.5s 0.2s ease-in forwards;
-    color: #EF5962;
-  }
-
-  .tools-title::after {
-    content: "";
-    border: 1px solid #EF5962;
-    width: 5%;
-    transition: all .3s linear;
-  }
-
-  .tools-title:hover::after {
-    width: 12%;
-  }
-
-  .tools-container {
-    z-index: 999;
-    font-size: clamp(1rem, 5vw, 1.6rem);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .topic-sec {
-    opacity: 0;
-    color: #EF5962;
-    animation: fadeIn 0.3s .7s ease-in forwards;
-    font-size: 1.2rem;
-  }
-
-  .value-sec {
-    font-size: 1rem;
-    opacity: 0;
-    animation: fadeIn 0.9s 1s ease-in forwards;
-  }
 }
 
-@media screen and (max-width: 900px) {
-  .tools .tools-wrapper {
-    width: 90%;
-  }
+.tool-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: clamp(1rem, 7vw, 2rem);
+  z-index: 999;
+  opacity: 0;
+  animation: fadeIn 0.5s 0.2s ease-in forwards;
+  color: #EF5962;
+}
+
+.tool-title::after {
+  content: "";
+  border: 1px solid #EF5962;
+  width: 40%;
+  transition: all .3s linear;
+}
+
+.tool-title:hover::after {
+  width: 90%;
+}
+
+.scroll-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 </style>
