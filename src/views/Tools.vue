@@ -5,7 +5,7 @@ import ToolAnimation from '../components/ToolAnimation.vue'
 const langs = ref(["Ruby", "HTML5", "CSS3", "JavaScript", "TypeScript", "SQL", "PHP", "Visual Basic", "C#"]);
 const devTools = ref(["git", "Visual Studio Code", "RubyMine", "Postman", "Chrome", "Sidekick", "Arc", "Edge", "Figma", "Firebase", "Supabase", "Adobe", "Docker", "Heroku"]);
 const frameworks = ref(["Tailwind", "VueJS", "ReactJS", "Nuxt", "Ruby on Rails", "Bootstrap", "Postgresql", "Drupal", "Wordpress", "Umbraco"]);
-const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monday"]);
+const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monday", "Clickup"]);
 </script>
 
 <template>
