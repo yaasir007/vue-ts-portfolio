@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router' 
+import { RouterView } from 'vue-router'
 import Particles from './components/Particles.vue'
 import Nav from '../src/views/Nav.vue'
 </script>
@@ -9,4 +9,3 @@ import Nav from '../src/views/Nav.vue'
   <Nav />
   <RouterView />
 </template>
-

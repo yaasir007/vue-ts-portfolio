@@ -4,7 +4,10 @@ const datas = props.items;
 </script>
 
 <template>
-  <div :class=props.cssClass :style=props.timing>
+  <div
+    :class=props.cssClass
+    :style=props.timing
+  >
     <div>
       <span v-for="data in datas">{{ data }}</span>
     </div>
