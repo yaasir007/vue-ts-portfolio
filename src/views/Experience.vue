@@ -11,7 +11,7 @@ const openExperience = (index: number) => {
   <section class="experience">
     <div class="experience-container">
       <div class="experience-wrapper">
-        <div class="experience-title">Work</div>
+        <div class="experience-title">Works</div>
         <div class="exp_main">
           <div
             v-for="experience, index in ExperienceJson"
@@ -144,6 +144,10 @@ const openExperience = (index: number) => {
 
 .exp-item:nth-child(7) {
   animation: fadeIn 4s ease-in forwards;
+}
+
+.exp-item:nth-child(8) {
+  animation: fadeIn 4.5s ease-in forwards;
 }
 
 

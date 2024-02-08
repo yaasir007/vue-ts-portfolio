@@ -21,8 +21,8 @@ const router = createRouter({
       component: About
     },
     {
-      path: '/work',
-      name: 'Work',
+      path: '/works',
+      name: 'Works',
       component: Experience
     },
     {
