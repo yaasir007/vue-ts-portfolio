@@ -33,7 +33,7 @@ import { RouterLink } from 'vue-router'
     flex-direction: column;
     height: 77vh;
     font-size: clamp(1rem, 10vw, 5rem);
-    z-index: 9999;
+    // z-index: 9;
 
     .intro-name,
     .intro-job-title {
