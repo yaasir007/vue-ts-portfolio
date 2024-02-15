@@ -159,5 +159,9 @@ const drawer = ref(false)
     color: white;
     text-decoration: none;
   }
+
+  .active {
+    display: none;
+  }
 }
 </style>
