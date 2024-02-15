@@ -96,7 +96,8 @@ const neoShore = ref("https://www.neoshore.eu/")
       flex-direction: column;
       font-size: 1rem;
       gap: 1rem;
-      z-index: 999;
+      z-index: -9999;
+
 
       .about-title {
         font-size: 1.3rem;

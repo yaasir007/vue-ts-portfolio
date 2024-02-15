@@ -47,16 +47,17 @@ onMounted(() => {
   gap: 3rem;
   margin-block: 6rem;
 
+
   .projects-title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: clamp(1rem, 7vw, 2rem);
-    z-index: 999;
     opacity: 0;
     animation: fadeIn 0.5s 0.2s ease-in forwards;
     color: #EF5962;
+    z-index: -9999;
   }
 
   .projects-title::after {
@@ -75,6 +76,8 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    z-index: -9999;
+
   }
 
   .project {
