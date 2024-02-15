@@ -29,7 +29,7 @@ const drawer = ref(false)
     <v-card>
       <v-layout>
         <v-app-bar
-          color="transparent"
+          color="#373f7a"
           prominent
         >
           <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
