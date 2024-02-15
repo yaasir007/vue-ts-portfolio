@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
+import MenuBar from '../assets/socials/menu.png'
+import Logo from '../assets/myc-logo.png'
+
 const drawer = ref(false)
 </script>
 
@@ -8,7 +11,7 @@ const drawer = ref(false)
   <div class="nav-section">
     <div class="nav-logo-container">
       <RouterLink to="/">
-        <img src="../assets/myc-logo.png" alt="MYC" class="nav-logo">
+        <img :src="Logo" alt="MYC" class="nav-logo">
       </RouterLink>
     </div>
 
@@ -30,7 +33,7 @@ const drawer = ref(false)
           prominent
         >
           <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
-            <img src="../assets/socials/menu.png" alt="" srcset="" style="width: 40px;">
+            <img :src="MenuBar" alt="Menu Bar" style="width: 40px;">
           </v-app-bar-nav-icon>
 
           <v-toolbar-title style="color: white;">MYC</v-toolbar-title>
@@ -66,7 +69,6 @@ const drawer = ref(false)
   height: 8vh;
   background-color: #373f7a;
   padding: .8rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,10 +93,8 @@ const drawer = ref(false)
     .nav-link {
       text-decoration: none;
       font-size: clamp(0.3rem, 4vw, 1rem);
-
       transition: all .2s ease-in;
       color: white;
-      transition: all .2s linear;
       opacity: 0;
     }
 
@@ -157,6 +157,7 @@ const drawer = ref(false)
   .route-link {
     font-size: 1.5rem;
     color: white;
+    text-decoration: none;
   }
 }
 </style>
