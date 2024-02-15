@@ -1,36 +1,7 @@
-<script lang="ts">
+<script setup lang="ts">
+import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
-
-export default {
-  data: () => ({
-    drawer: false,
-    group: null,
-    items: [
-      {
-        title: 'Foo',
-        value: 'foo',
-      },
-      {
-        title: 'Bar',
-        value: 'bar',
-      },
-      {
-        title: 'Fizz',
-        value: 'fizz',
-      },
-      {
-        title: 'Buzz',
-        value: 'buzz',
-      },
-    ],
-  }),
-
-  watch: {
-    group() {
-      this.drawer = false
-    },
-  },
-}
+const drawer = ref(false)
 </script>
 
 <template>
@@ -63,28 +34,21 @@ export default {
           </v-app-bar-nav-icon>
 
           <v-toolbar-title style="color: white;">MYC</v-toolbar-title>
-
-          <!-- <v-spacer></v-spacer> -->
-
-          <!-- <v-btn variant="text" icon="mdi-magnify"></v-btn>
-
-          <v-btn variant="text" icon="mdi-filter"></v-btn>
-
-          <v-btn variant="text" icon="mdi-dots-vertical"></v-btn> -->
         </v-app-bar>
 
         <v-navigation-drawer
           v-model="drawer"
-          location="left"
+          location="bottom"
           temporary
-          style="background-color: #373f7a; z-index: 999999999;"
+          style="background-color: rgb(0, 0, 0); height: 100dvh;"
         >
           <v-list>
             <div class="route-links">
               <RouterLink active-class="active" class="route-link" to="/">Home</RouterLink>
               <RouterLink active-class="active" class="route-link" to="/about">About</RouterLink>
-              <RouterLink active-class="active" class="route-link" to="/work">Experience</RouterLink>
+              <RouterLink active-class="active" class="route-link" to="/works">Experience</RouterLink>
               <RouterLink active-class="active" class="route-link" to="/projects">Projects</RouterLink>
+              <RouterLink active-class="active" class="route-link" to="/blogs">Blogs</RouterLink>
               <RouterLink active-class="active" class="route-link" to="/tools">Tools</RouterLink>
             </div>
           </v-list>
@@ -96,7 +60,6 @@ export default {
 
 <style lang="scss" scoped>
 .nav-section {
-  z-index: 99999;
   width: 100%;
   position: fixed;
   top: 0;
@@ -177,15 +140,23 @@ export default {
   }
   .nav-section-mobile {
     display: block;
+    z-index: 9999;
   }
+
   .route-links {
+    height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    gap: 2em;
+    gap: 3rem;
     margin-block: 1rem;
     margin-inline: 1.5rem;
+  }
+
+  .route-link {
+    font-size: 1.5rem;
+    color: white;
   }
 }
 </style>
