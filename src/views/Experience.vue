@@ -97,7 +97,6 @@ const openExperience = (index: number) => {
   flex-direction: column;
   gap: 2rem;
   color: white;
-  z-index: -9999;
 }
 
 .exp-item {
@@ -110,7 +109,7 @@ const openExperience = (index: number) => {
   gap: 1rem;
   cursor: pointer;
   transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 9999;
+  z-index: -1;
 }
 
 .exp-item:hover {

@@ -40,6 +40,7 @@ const drawer = ref(false)
         </v-app-bar>
 
         <v-navigation-drawer
+          class="drawerNav"
           v-model="drawer"
           location="bottom"
           temporary
@@ -140,7 +141,6 @@ const drawer = ref(false)
   }
   .nav-section-mobile {
     display: block;
-    z-index: 9999;
   }
 
   .route-links {
