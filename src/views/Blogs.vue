@@ -52,7 +52,7 @@ onMounted(() => {
     align-items: center;
     flex-direction: column;
     font-size: clamp(1rem, 7vw, 2rem);
-    z-index: -9999;
+    z-index: 999;
     opacity: 0;
     animation: fadeIn 0.5s 0.2s ease-in forwards;
     color: #EF5962;
@@ -74,8 +74,6 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  z-index: -9999;
-
 }
 
 .project {
@@ -97,6 +95,7 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    z-index: 999;
 
     a {
       color: white;
@@ -131,6 +130,7 @@ onMounted(() => {
   border: 1px solid rgba(255, 255, 255, 0.5);
   /* Adjust the border width and opacity as needed */
   background-clip: padding-box;
+  z-index: 999;
   opacity: 0;
   animation: fadeIn 0.5s 0.5s ease-in forwards;
   max-width: 400px;
@@ -169,7 +169,6 @@ onMounted(() => {
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 0.8rem;
-  z-index: -9999;
 }
 
 .btn:focus {
