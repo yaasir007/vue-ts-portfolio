@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 import MyImage from '../assets/my-image.jpg'
 import Linkedin from '../assets/socials/linkedin.svg'
