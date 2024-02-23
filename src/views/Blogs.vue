@@ -116,6 +116,7 @@ onMounted(() => {
   }
 
   .project-btns {
+    width: 70%;
     display: flex;
     gap: 1rem;
     opacity: 0;
