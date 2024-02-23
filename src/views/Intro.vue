@@ -26,7 +26,6 @@
     flex-direction: column;
     height: 77vh;
     font-size: clamp(1rem, 10vw, 5rem);
-    z-index: 9999;
 
     .intro-name,
     .intro-job-title {
@@ -44,6 +43,12 @@
       opacity: 0;
       animation: fadeIn 0.8s 0.8s ease-in forwards;
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro-content {
+    z-index: -9;
   }
 }
 </style>

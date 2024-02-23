@@ -128,12 +128,6 @@ const drawer = ref(false)
       transform: scale(1.08);
     }
   }
-
-  @media screen and (max-width: 570px) {
-    .nav-links {
-      display: none;
-    }
-  }
 }
 
 //CSS for mobile Menu

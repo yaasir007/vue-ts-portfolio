@@ -37,7 +37,6 @@ const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monda
   align-items: center;
   flex-direction: column;
   font-size: clamp(1rem, 7vw, 2rem);
-  z-index: 999;
   opacity: 0;
   animation: fadeIn 0.5s 0.2s ease-in forwards;
   color: #EF5962;
@@ -61,5 +60,12 @@ const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monda
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .tool-title,
+  .scroll-container {
+    z-index: -9;
+  }
 }
 </style>
