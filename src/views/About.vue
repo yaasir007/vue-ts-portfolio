@@ -153,7 +153,7 @@ const neoShore = ref("https://www.neoshore.eu/")
       .about-job-title,
       .about-hashtags {
         color: gold;
-        font-size: smaller;
+        font-size: 1rem;
       }
     }
 

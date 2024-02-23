@@ -160,12 +160,12 @@ const drawer = ref(false)
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     margin-block: 1rem;
     margin-inline: 1.5rem;
   }
   .route-link {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     text-decoration: none;
   }
