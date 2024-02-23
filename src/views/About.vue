@@ -81,7 +81,6 @@ const neoShore = ref("https://www.neoshore.eu/")
   align-items: center;
   margin-top: 3rem;
 
-
   .about-inner {
     height: fit-content;
     display: flex;
@@ -96,7 +95,6 @@ const neoShore = ref("https://www.neoshore.eu/")
       flex-direction: column;
       font-size: 1rem;
       gap: 1rem;
-      z-index: 999;
 
       .about-title {
         font-size: 1.3rem;
@@ -155,7 +153,7 @@ const neoShore = ref("https://www.neoshore.eu/")
       .about-job-title,
       .about-hashtags {
         color: gold;
-        font-size: smaller;
+        font-size: 1rem;
       }
     }
 
@@ -173,6 +171,12 @@ const neoShore = ref("https://www.neoshore.eu/")
       box-shadow: 0px 0px 20px 4px #a60080;
       border-radius: 31% 69% 36% 64% / 49% 54% 46% 51%;
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-content  {
+    z-index: -9;
   }
 }
 

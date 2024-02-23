@@ -71,7 +71,6 @@ const openExperience = (index: number) => {
   align-items: center;
   flex-direction: column;
   font-size: clamp(1rem, 7vw, 2rem);
-  z-index: 999;
   opacity: 0;
   animation: fadeIn 0.5s 0.2s ease-in forwards;
   color: #EF5962;
@@ -109,7 +108,6 @@ const openExperience = (index: number) => {
   gap: 1rem;
   cursor: pointer;
   transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 999;
 }
 
 .exp-item:hover {
@@ -210,9 +208,13 @@ const openExperience = (index: number) => {
   list-style: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
+  .experience-title {
+    z-index: -9;
+  }
   .exp-item {
     width: 90%;
+    z-index: -9;
   }
   .exp__duration {
     display: none;
