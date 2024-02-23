@@ -210,7 +210,7 @@ const openExperience = (index: number) => {
   list-style: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
   .exp-item {
     width: 90%;
   }
