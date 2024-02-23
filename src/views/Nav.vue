@@ -31,12 +31,13 @@ const drawer = ref(false)
         <v-app-bar
           color="#373f7a"
           prominent
+          class="nav-mobile"
         >
           <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
-            <img :src="MenuBar" alt="Menu Bar" style="width: 40px;">
+            <img :src="MenuBar" alt="Menu Bar" style="width: 50px;">
           </v-app-bar-nav-icon>
 
-          <v-toolbar-title style="color: white;">MYC</v-toolbar-title>
+          <v-toolbar-title style="color: white;" class="nav-mobile-title">MYC</v-toolbar-title>
         </v-app-bar>
 
         <v-navigation-drawer
@@ -91,7 +92,7 @@ const drawer = ref(false)
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1.4rem;
 
     .nav-link {
       text-decoration: none;
@@ -139,12 +140,25 @@ const drawer = ref(false)
 .nav-section-mobile {
   display: none;
 }
+
 @media screen and (max-width: 750px) {
   .nav-section {
     display: none;
   }
   .nav-section-mobile {
     display: block;
+  }
+  .nav-mobile {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-mobile-title {
+    color: white;
+    font-size: 1.8rem;
   }
   .route-links {
     height: 90vh;
