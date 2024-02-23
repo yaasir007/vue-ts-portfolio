@@ -34,7 +34,7 @@ const drawer = ref(false)
           class="nav-mobile"
         >
           <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
-            <img :src="MenuBar" alt="Menu Bar" style="width: 50px;">
+            <img :src="MenuBar" alt="Menu Bar" style="width: 45px;">
           </v-app-bar-nav-icon>
 
           <v-toolbar-title style="color: white;" class="nav-mobile-title">MYC</v-toolbar-title>
@@ -152,7 +152,7 @@ const drawer = ref(false)
 
   .nav-mobile-title {
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .route-links {
     height: 90vh;
