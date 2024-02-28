@@ -43,9 +43,9 @@ const drawer = ref(false)
         <v-navigation-drawer
           class="drawerNav"
           v-model="drawer"
-          location="bottom"
+          location="left"
           temporary
-          style="background-color: rgb(0, 0, 0); height: 100dvh;"
+          style="background-color: rgb(0, 0, 0); height: 100vh; width: 100vw;"
         >
           <v-list>
             <div class="route-links">
