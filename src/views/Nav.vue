@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import Logo from '../assets/myc-logo.png'
-import MenuBar from '../assets/nav/menu.png'
-
-const drawer = ref(false)
 </script>
 
 <template>
@@ -23,43 +19,6 @@ const drawer = ref(false)
       <RouterLink active-class="active" class="nav-link" to="/blogs">&lt;Blogs&gt;</RouterLink>
       <RouterLink active-class="active" class="nav-link" to="/tools">&lt;Tools&gt;</RouterLink>
     </div>
-  </div>
-
-  <div class="nav-section-mobile">
-    <v-card>
-      <v-layout>
-        <v-app-bar
-          color="#373f7a"
-          prominent
-          class="nav-mobile"
-        >
-          <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
-            <img :src="MenuBar" alt="Menu Bar" style="width: 45px;">
-          </v-app-bar-nav-icon>
-
-          <v-toolbar-title style="color: white;" class="nav-mobile-title">MYC</v-toolbar-title>
-        </v-app-bar>
-
-        <v-navigation-drawer
-          class="drawerNav"
-          v-model="drawer"
-          location="left"
-          temporary
-          style="background-color: rgb(0, 0, 0); height: 100vh; width: 100vw;"
-        >
-          <v-list>
-            <div class="route-links">
-              <RouterLink active-class="active" class="route-link" to="/">Home</RouterLink>
-              <RouterLink active-class="active" class="route-link" to="/about">About</RouterLink>
-              <RouterLink active-class="active" class="route-link" to="/works">Experience</RouterLink>
-              <RouterLink active-class="active" class="route-link" to="/projects">Projects</RouterLink>
-              <RouterLink active-class="active" class="route-link" to="/blogs">Blogs</RouterLink>
-              <RouterLink active-class="active" class="route-link" to="/tools">Tools</RouterLink>
-            </div>
-          </v-list>
-        </v-navigation-drawer>
-      </v-layout>
-    </v-card>
   </div>
 </template>
 
@@ -130,46 +89,8 @@ const drawer = ref(false)
   }
 }
 
-//CSS for mobile Menu
-.nav-section-mobile {
-  display: none;
-}
-
 @media screen and (max-width: 750px) {
   .nav-section {
-    display: none;
-  }
-  .nav-section-mobile {
-    display: block;
-  }
-  .nav-mobile {
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-mobile-title {
-    color: white;
-    font-size: 1.5rem;
-  }
-  .route-links {
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
-    margin-block: 1rem;
-    margin-inline: 1.5rem;
-  }
-  .route-link {
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-  }
-  .active {
     display: none;
   }
 }
