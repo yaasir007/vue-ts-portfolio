@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import Logo from '../assets/myc-logo.png'
+import Logo from '../../public/logo/logo_without_bg.png'
 </script>
 
 <template>
@@ -12,12 +12,12 @@ import Logo from '../assets/myc-logo.png'
     </div>
 
     <div class="nav-links">
-      <RouterLink active-class="active" class="nav-link" to="/">&lt;Home&gt;</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/about">&lt;About&gt;</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/works">&lt;Works&gt;</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/projects">&lt;Projects&gt;</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/blogs">&lt;Blogs&gt;</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/tools">&lt;Tools&gt;</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/">Home</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/about">About</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/works">Works</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/projects">Projects</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/blogs">Blogs</RouterLink>
+      <RouterLink active-class="active" class="nav-link" to="/tools">Tools</RouterLink>
     </div>
   </div>
 </template>
@@ -41,7 +41,9 @@ import Logo from '../assets/myc-logo.png'
     justify-content: center;
     align-items: center;
     .nav-logo {
-      width: 65px;
+      margin-top: .3rem;
+      transform: scale(1.5);
+      height: 7vh;
       opacity: 0;
       animation: fadeIn 0.8s 0.3s ease-in forwards;
     }
@@ -51,7 +53,7 @@ import Logo from '../assets/myc-logo.png'
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.4rem;
+    gap: 2.3rem;
 
     .nav-link {
       text-decoration: none;
