@@ -1,46 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+/* Order */
+@layer reset, primevue;
 
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Reset CSS */
+@layer reset {
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
-body {
-  background-color: #1d244b;
-  font-family: 'JetBrains Mono', monospace;
-  scroll-behavior: smooth;
-  color: white;
-  overflow-x: hidden;
-}
-
-.img-res {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: bottom;
-}
-
-body::-webkit-scrollbar {
-  width: .3rem;
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px white;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #a60080;
-}
-
-@keyframes fadeIn {
-  from {
-      opacity:0;
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
-  to {
-      opacity:1;
+  body {
+    background-color: #1d244b;
+    font-family: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .img-res {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: bottom;
+  }
+
+  body::-webkit-scrollbar {
+    width: .3rem;
+  }
+
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px white;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #a60080;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
   }
 }
