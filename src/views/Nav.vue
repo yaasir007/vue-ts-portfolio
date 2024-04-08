@@ -35,6 +35,7 @@ import Logo from '../../public/logo/logo_without_bg.png'
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 1.5rem;
 
   .nav-logo-container {
     display: flex;
@@ -49,7 +50,6 @@ import Logo from '../../public/logo/logo_without_bg.png'
     }
   }
   .nav-links {
-    padding-right: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
