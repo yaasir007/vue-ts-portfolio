@@ -30,7 +30,7 @@ const particlesLoaded = async (container: any) => {
             value: '#a60080',
           },
           shape: {
-            type: 'circle',
+            type: 'polygon',
             stroke: {
               width: 0,
               color: '#000000'
