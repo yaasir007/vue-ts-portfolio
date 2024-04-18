@@ -72,7 +72,7 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
