@@ -10,7 +10,7 @@ import ExperienceJson from '../data/experience.json'
       <div class="experience-wrapper">
         <div class="experience-title">Works</div>
         <Accordion :activeIndex="0" class="accord-items">
-            <AccordionTab v-for="tab, index in ExperienceJson" :key="index" :header="tab.company_name" class="accord-item">
+            <AccordionTab v-for="tab, index in ExperienceJson" :key="index" :header="tab.company_name" id="test" class="accord-item">
                 <div class="job-content">
                   <div class="job-title">
                     <span>{{ tab.job_title }}</span>
@@ -68,6 +68,12 @@ import ExperienceJson from '../data/experience.json'
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 300;
+}
+
+#test {
+  background-color: red;
 }
 
 .job-content {
@@ -77,6 +83,7 @@ import ExperienceJson from '../data/experience.json'
 }
 
 .job-title {
+  font-family: "Oswald", sans-serif !important;
   font-weight: 700;
 }
 
