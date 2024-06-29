@@ -68,7 +68,6 @@ import ExperienceJson from '../data/experience.json'
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  font-family: "Oswald", sans-serif !important;
   font-weight: 300;
 }
 
@@ -83,7 +82,6 @@ import ExperienceJson from '../data/experience.json'
 }
 
 .job-title {
-  font-family: "Oswald", sans-serif !important;
   font-weight: 700;
 }
 

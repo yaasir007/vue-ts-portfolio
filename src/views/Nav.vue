@@ -13,7 +13,7 @@ import Logo from '../assets/nav/logo_without_bg.png'
 
     <div class="nav-links">
       <RouterLink active-class="active" class="nav-link" to="/">Home</RouterLink>
-      <RouterLink active-class="active" class="nav-link" to="/about">About</RouterLink>
+      <!-- <RouterLink active-class="active" class="nav-link" to="/about">About</RouterLink> -->
       <RouterLink active-class="active" class="nav-link" to="/works">Works</RouterLink>
       <RouterLink active-class="active" class="nav-link" to="/projects">Projects</RouterLink>
       <RouterLink active-class="active" class="nav-link" to="/blogs">Blogs</RouterLink>
@@ -58,6 +58,7 @@ import Logo from '../assets/nav/logo_without_bg.png'
     .nav-link {
       text-decoration: none;
       font-size: clamp(0.3rem, 4vw, 1rem);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
       transition: all .2s ease-in;
       color: white;

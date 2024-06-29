@@ -1,5 +1,4 @@
 /* Order */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @layer reset, primevue;
 
 /* Reset CSS */
@@ -17,11 +16,7 @@
     scroll-behavior: smooth;
     color: white;
     overflow-x: hidden;
-
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: lighter;
-    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   .img-res {
