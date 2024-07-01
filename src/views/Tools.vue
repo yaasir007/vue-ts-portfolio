@@ -36,7 +36,7 @@ const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monda
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: clamp(1rem, 7vw, 2rem);
+  font-size: clamp(1rem, 7vw, 1.5rem);
   opacity: 0;
   animation: fadeIn 0.5s 0.2s ease-in forwards;
   color: #EF5962;
