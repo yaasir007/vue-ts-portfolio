@@ -13,7 +13,7 @@
 
 <style lang="scss" scoped>
 .preloader {
-  background-color: black;
+  background-color: #1d244b;
   height: 100vh;
   width: 100vw;
   display: flex;
