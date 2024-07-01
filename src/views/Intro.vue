@@ -52,7 +52,7 @@ const socials = ref([
   <div class="intro-section">
     <div class="intro-content">
       <div class="intro-name">Yaasir Cheekoory</div>
-      <div class="intro-job-title">Full Stack Engineer</div>
+      <div class="intro-job-title animate-charcter">Full Stack Engineer</div>
 
       <div class="about-socials">
         <div class="social" v-for="social in socials">
@@ -90,13 +90,34 @@ const socials = ref([
     .intro-name {
       font-family: "Bebas Neue", sans-serif;
       opacity: 0;
-      animation: fadeIn 0.8s 0.3s ease-in forwards;
+      animation: fadeIn 0.8s 0.8s ease-in forwards;
     }
 
     .intro-job-title {
       font-family: "Bebas Neue", sans-serif;
       opacity: 0;
-      animation: fadeIn 0.8s 0.8s ease-in forwards;
+    }
+
+    .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite, fadeIn 0.8s 0.8s ease-in forwards;
+      display: inline-block;
+      font-size: 5rem;
     }
 
     .about-socials {
@@ -134,6 +155,12 @@ const socials = ref([
         animation: fadeIn 0.8s 2.4s ease-in forwards;
       }
     }
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
 }
 
