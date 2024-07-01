@@ -131,25 +131,27 @@ const socials = ref([
         align-items: center;
         width: 2.3rem;
         opacity: 0;
+        transition: all 1s linear;
+        transform: translateY(-5px);
       }
 
       .social:nth-child(1) {
-        animation: fadeIn 0.8s 1.2s ease-in forwards;
+        animation: fadeIn 0.8s 1.2s ease-in forwards, bounce 1.5s infinite alternate;
       }
       .social:nth-child(2) {
-        animation: fadeIn 0.8s 1.4s ease-in forwards;
+        animation: fadeIn 0.8s 1.4s ease-in forwards, bounce 1.5s .3s infinite alternate;
       }
       .social:nth-child(3) {
-        animation: fadeIn 0.8s 1.6s ease-in forwards;
+        animation: fadeIn 0.8s 1.6s ease-in forwards, bounce 1.5s .5s infinite alternate;
       }
       .social:nth-child(4) {
-        animation: fadeIn 0.8s 1.8s ease-in forwards;
+        animation: fadeIn 0.8s 1.8s ease-in forwards, bounce 1.5s .7s infinite alternate;
       }
       .social:nth-child(5) {
-        animation: fadeIn 0.8s 2s ease-in forwards;
+        animation: fadeIn 0.8s 2s ease-in forwards, bounce 1.5s .9s infinite alternate;
       }
       .social:nth-child(6) {
-        animation: fadeIn 0.8s 2.2s ease-in forwards;
+        animation: fadeIn 0.8s 2.2s ease-in forwards, bounce 1.5s 1.1s infinite alternate;
       }
       .social:nth-child(7) {
         animation: fadeIn 0.8s 2.4s ease-in forwards;
@@ -161,6 +163,15 @@ const socials = ref([
 @keyframes textclip {
   to {
     background-position: 200% center;
+  }
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0); /* Start position */
+  }
+  100% {
+      transform: translateY(-10px); /* End position (adjust the -10px for desired bounce height) */
   }
 }
 

@@ -6,12 +6,12 @@ import Particles from './components/Particles.vue'
 import Nav from '../src/views/Nav.vue'
 import Preloader from '../src/components/Preloader.vue'
 
-const isLoading = ref(false)
+const isLoading = ref(true)
 
 onMounted(() => {
   setTimeout(() => {
     isLoading.value = false;
-  }, 2500);
+  }, 1500);
 })
 </script>
 

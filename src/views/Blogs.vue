@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import ScrollReveal from 'scrollreveal'
 import ProjectsJson from '../data/articles.json'
+
 import Card from 'primevue/card';
-const defaultImg = ref("https://i.pinimg.com/564x/5e/d5/8c/5ed58cbf79e583bfbab7016077008e28.jpg")
+import Button from 'primevue/button';
+
+// const defaultImg = ref("https://i.pinimg.com/564x/5e/d5/8c/5ed58cbf79e583bfbab7016077008e28.jpg")
+
+const redirectWebsite = (project: any) => {
+  window.open(project.link, "_target");
+}
+
 onMounted(() => {
   ScrollReveal().reveal('.project', { delay: 400 });
 })
@@ -13,18 +21,12 @@ onMounted(() => {
   <div class="projects-section">
     <div class="projects-title">Blogs</div>
     <div class="projects-container">
-      <Card v-for="project in ProjectsJson" style="width: 18rem; height: 350px; overflow: hidden; z-index: 999; background-color: snow;" class="project-card">
-        <template #header>
-            <img :src="project.img ? project.img : defaultImg" class="img-res" loading="lazy" style="height: 200px; object-fit: cover;" />
-        </template>
-        <template #title>
-          <span style="font-size: 1rem; color: #ff1d5e;">
-            {{ project.title }}
-          </span>
-        </template>
-        <template #footer>
-            <div class="project-btns">
-              <a v-if=project.link :href=project.link target="_blank" class="btn">Read More</a>
+      <Card v-for="project in ProjectsJson" style="width: 70%; height: fit-content; z-index: 999;">
+        <template #title>{{ project.title }}</template>
+        <template #content>
+            <p class="m-0">{{ project.description }}</p>
+            <div class="card-btns">
+              <Button v-if="project.link" label="Read Article" severity="success" @click="redirectWebsite(project)" />
             </div>
         </template>
       </Card>
@@ -33,6 +35,12 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+.card-btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .projects-section {
   height: 100%;
   display: flex;
@@ -72,22 +80,4 @@ onMounted(() => {
   flex-wrap: wrap;
   gap: 2rem;
 }
-
-.project-btns {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  .btn {
-    padding: .5rem 1rem;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-  }
-
-  a {
-    text-decoration: none;
-  }
-}
-
 </style>
