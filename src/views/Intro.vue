@@ -117,13 +117,13 @@ const socials = ref([
       -webkit-text-fill-color: transparent;
       animation: textclip 2s linear infinite, fadeIn 0.8s 0.8s ease-in forwards;
       display: inline-block;
-      font-size: 5rem;
+      font-size: clamp(.7rem, 10vw, 5rem);
     }
 
     .about-socials {
       display: flex;
       gap: 1.3rem;
-      margin-top: -3.5rem;
+      margin-top: -6rem;
 
       .social {
         display: flex;
