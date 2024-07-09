@@ -3,6 +3,7 @@ import Particles from 'vue3-particles'
 import ScrollReveal from 'scrollreveal'
 import PrimeVue from 'primevue/config'
 
+import 'primeicons/primeicons.css'
 import './style.scss'
 import App from './App.vue'
 import router from './router/index'

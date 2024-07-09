@@ -23,7 +23,7 @@ onMounted(() => {
   <div class="projects-section">
     <div class="projects-title">Projects</div>
     <div class="projects-container">
-        <Card v-for="project in ProjectsJson" style="width: 80%; height: fit-content; z-index: 999;">
+        <Card v-for="project in ProjectsJson" style="width: 80%; height: fit-content; z-index: 999;" class="project-card">
           <template #title>{{ project.title }}</template>
           <template #content>
               <p class="m-0">{{ project.description }}</p>

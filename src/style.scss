@@ -55,6 +55,46 @@
     }
   }
 
+  //navigation
+  .p-menubar {
+    border: none !important;
+  }
+
+  .p-menubar-root-list {
+    gap: 1.5rem !important;
+  }
+
+  @media screen and (max-width: 960px) {
+    .nav-link {
+      font-size: 1.4rem !important;
+      background: #1d244b !important;
+    }
+
+    .p-menubar-root-list {
+      gap: 5rem !important;
+    }
+
+    .p-menubar.p-menubar-mobile .p-menubar-button {
+      background-color: white !important;
+      color: #1d244b !important;
+    }
+
+    .p-menubar.p-menubar-mobile .p-menubar-root-list {
+      background: #1d244b !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      height: 92dvh;
+    }
+
+    .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content {
+      background-color: transparent !important;
+    }
+  }
+  //navigation ends
+
+
   .p-accordion > .p-accordion-tab {
     z-index: 9999;
     opacity: 0;
@@ -91,6 +131,7 @@
   .p-accordion > .p-accordion-tab:nth-child(8) {
     animation: fadeIn 0.5s 1.6s ease-in forwards;
   }
+
 
   // Project Page
   // .p-card-content {
