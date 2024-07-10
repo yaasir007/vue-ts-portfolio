@@ -14,8 +14,8 @@
 <style lang="scss" scoped>
 .preloader {
   background-color: #1d244b;
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   display: flex;
   justify-content: center;
   align-items: center;

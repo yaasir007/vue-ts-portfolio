@@ -4,6 +4,7 @@ import ScrollReveal from 'scrollreveal'
 import ProjectsJson from '../data/projects.json'
 import Card from 'primevue/card';
 import Button from 'primevue/button';
+import ScrollTop from 'primevue/scrolltop';
 // const defaultImg = ref("https://i.pinimg.com/564x/5e/d5/8c/5ed58cbf79e583bfbab7016077008e28.jpg")
 
 const redirectGithub = (project: any) => {
@@ -35,6 +36,7 @@ onMounted(() => {
         </Card>
     </div>
   </div>
+  <ScrollTop />
 </template>
 
 <style lang="scss" scoped>
