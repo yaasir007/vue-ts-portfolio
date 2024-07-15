@@ -50,6 +50,8 @@ import ExperienceJson from '../data/experience.json'
   opacity: 0;
   animation: fadeIn 0.5s 0.2s ease-in forwards;
   color: #EF5962;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .experience-title::after {
