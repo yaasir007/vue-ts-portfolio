@@ -133,8 +133,7 @@ const socials = ref([
         opacity: 0;
         transition: all 1s linear;
         transform: translateY(-5px);
-        z-indez: 9999;
-
+        z-index: 9999 !important;
       }
 
       .social:nth-child(1) {
@@ -179,10 +178,13 @@ const socials = ref([
 
 @media screen and (max-width: 750px) {
   .intro-content {
-    z-index: -9;
+    // z-index: -9;
   }
   .about-socials {
     margin-top: 0rem !important;
+  }
+  .social {
+    z-index: 9999 !important;
   }
 }
 </style>
