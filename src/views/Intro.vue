@@ -133,6 +133,8 @@ const socials = ref([
         opacity: 0;
         transition: all 1s linear;
         transform: translateY(-5px);
+        z-indez: 9999;
+
       }
 
       .social:nth-child(1) {
