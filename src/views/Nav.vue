@@ -90,14 +90,16 @@ const items = ref([
 
   .nav-link {
     text-decoration: none;
-    font-size: clamp(0.3rem, 4vw, 1.025rem);
-    // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: clamp(0.3rem, 4vw, 1.055rem);
+
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
 
     transition: all 0.3s linear;
     color: white;
     display: inline-flex !important;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
   }
 
   .nav-link:hover {
