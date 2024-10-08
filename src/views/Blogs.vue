@@ -2,11 +2,8 @@
 import { onMounted, ref } from 'vue';
 import ScrollReveal from 'scrollreveal'
 import ProjectsJson from '../data/articles.json'
-
-// import Card from 'primevue/card';
-// import Button from 'primevue/button';
+import Button from 'primevue/button';
 import ScrollTop from 'primevue/scrolltop';
-
 const defaultImg = ref("https://i.pinimg.com/564x/5e/d5/8c/5ed58cbf79e583bfbab7016077008e28.jpg")
 
 const redirectWebsite = (project: any) => {
@@ -22,38 +19,24 @@ onMounted(() => {
   <div class="projects-section">
     <div class="projects-title">Blogs</div>
     <div class="projects-container">
-      <!-- <Card v-for="project in ProjectsJson" style="width: 70%; height: fit-content; z-index: 999;">
-        <template #title>{{ project.title }}</template>
-        <template #content>
-            <p class="m-0">{{ project.description }}</p>
-            <div class="card-btns">
-              <Button v-if="project.link" label="Read Article" severity="success" @click="redirectWebsite(project)" />
+      <div v-for="project in ProjectsJson" class="article-card">
+        <div v-if="project" class="project-card">
+          <div class="content">
+            <p class="title">{{ project.title }}</p>
+            <p class="date">{{ project.description.substring(0, 90) }} ...</p>
+            <div style="display: flex; gap: .8rem;">
+              <Button v-show="project.link" style="background-color: #a60080; border: none;" class="project-buttons" label="Read More" @click="redirectWebsite(project)" />
             </div>
-        </template>
-      </Card> -->
-
-
-      <div v-for="project in ProjectsJson" class="article-card" @click="redirectWebsite(project)">
-        <div class="content">
-          <p class="title">{{ project.title }}</p>
-          <p class="date">{{ project.description.substring(0, 90) }} ...</p>
-        </div>
-        <img :src="project.img || defaultImg" alt="article-cover" />
+          </div>
+          <img :src="project.img || defaultImg" alt="article-cover" />
+          </div>
       </div>
-
-
     </div>
   </div>
   <ScrollTop />
 </template>
 
 <style lang="scss" scoped>
-.card-btns {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
 .projects-section {
   height: 100%;
   display: flex;
@@ -61,62 +44,71 @@ onMounted(() => {
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  margin-block: 6rem;
-}
+  margin-block: 5rem;
+  margin-inline: 3rem;
 
-.projects-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: clamp(1rem, 7vw, 1.5rem);
-  opacity: 0;
-  animation: fadeIn 0.5s 0.2s ease-in forwards;
-  color: #EF5962;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
+  .projects-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: clamp(1rem, 7vw, 3rem);
+    font-family: "Bebas Neue", sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.5s 0.2s ease-in forwards;
+    color: #EF5962;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
 
-.projects-title::after {
-  content: "";
-  border: 1px solid #EF5962;
-  width: 40%;
-  transition: all .3s linear;
-}
+  .projects-title::after {
+    content: "";
+    border: 1px solid #EF5962;
+    width: 40%;
+    transition: all .3s linear;
+  }
 
-.projects-title:hover::after {
-  width: 90%;
+  .projects-title:hover::after {
+    width: 90%;
+  }
 }
 
 .projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 1rem;
 }
 
 .article-card {
-  width: 350px;
-  height: 220px;
+  max-width: 950px;
+  max-height: 420px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: 1px  ;
+  box-shadow: 0 1px 3px rgba(217, 212, 212, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 300ms;
   cursor: pointer;
 }
 
 .article-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  img {
+    opacity: 1;
+  }
 }
 
 .article-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: .6;
+  transition: opacity .4s linear;
 }
 
 .article-card .content {
@@ -133,6 +125,7 @@ onMounted(() => {
   align-items: start;
   flex-direction: column;
   gap: 0.5rem;
+  z-index: 9999;
 }
 
 .article-card .date,
@@ -141,13 +134,52 @@ onMounted(() => {
 }
 
 .article-card .date {
-  font-size: 13px;
+  font-size: clamp(0.3rem, 4vw, 1.055rem);
+
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 4px;
 }
 
 .article-card .title {
-  font-size: 15px;
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
   color: #fff;
+}
+
+.project-buttons {
+  font-size: clamp(1rem, 5vw, 1rem);
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 500px) {
+  .article-card .date {
+    font-size: clamp(0.3rem, 4vw, .8rem);
+
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 4px;
+  }
+
+  .article-card .title {
+    font-size: clamp(1rem, 5vw, 1rem);
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #fff;
+  }
+
+  .project-buttons {
+    font-size: clamp(1rem, 5vw, 0.5rem);
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
 }
 </style>

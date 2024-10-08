@@ -11,7 +11,7 @@ const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monda
 <template>
   <div class="tool-wrapper">
     <div class="tool-title">Tools</div>
-    <div class="scroll-container">
+    <div class="scroll-container project-card">
       <ToolAnimation timing="--time:40s" cssClass="scroll" :items=langs />
       <ToolAnimation timing="--time:50s" cssClass="scroll-reverse" :items=devTools />
       <ToolAnimation timing="--time:40s" cssClass="scroll" :items=frameworks />
@@ -36,7 +36,8 @@ const mgmt = ref(["Agile", "Scrum", "Jira", "GitHub", "GitLab", "Trello", "Monda
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: clamp(1rem, 7vw, 1.5rem);
+  font-size: clamp(1rem, 7vw, 3rem);
+  font-family: "Bebas Neue", sans-serif;
   opacity: 0;
   animation: fadeIn 0.5s 0.2s ease-in forwards;
   color: #EF5962;
