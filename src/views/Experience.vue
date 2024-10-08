@@ -46,7 +46,8 @@ import ExperienceJson from '../data/experience.json'
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: clamp(1rem, 7vw, 1.5rem);
+  font-size: clamp(1rem, 7vw, 3rem);
+  font-family: "Bebas Neue", sans-serif;
   opacity: 0;
   animation: fadeIn 0.5s 0.2s ease-in forwards;
   color: #EF5962;
@@ -73,10 +74,6 @@ import ExperienceJson from '../data/experience.json'
   font-weight: 300;
 }
 
-#test {
-  background-color: red;
-}
-
 .job-content {
   display: flex;
   flex-direction: column;
@@ -85,12 +82,17 @@ import ExperienceJson from '../data/experience.json'
 
 .job-title {
   font-weight: 700;
+  font-size: clamp(1rem, 7vw, 2rem);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .job-res {
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  font-size: clamp(1rem, 7vw, 1rem);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
 }
 
 </style>

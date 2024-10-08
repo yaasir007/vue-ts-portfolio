@@ -68,6 +68,7 @@ const datas = props.items;
   padding: 10px 15px;
   border-radius: 5px;
   transition: 0.5s;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .scroll div span:hover,

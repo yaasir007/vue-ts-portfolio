@@ -100,6 +100,18 @@
   }
   //navigation ends
 
+  .p-accordion-header-action {
+    border: none !important;
+    background-color: #EF5962 !important;
+  }
+
+  .p-accordion-header-text {
+    font-size: clamp(1rem, 7vw, 1.5rem);
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: underline;
+    color: azure;
+    letter-spacing: 1px;
+  }
 
   .p-accordion > .p-accordion-tab {
     z-index: 9999;

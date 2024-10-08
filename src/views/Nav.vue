@@ -86,7 +86,6 @@ const items = ref([
   justify-content: center;
   align-items: center;
   gap: 2.3rem;
-  background-color: transparent;
 
   .nav-link {
     text-decoration: none;
@@ -100,10 +99,6 @@ const items = ref([
     display: inline-flex !important;
     font-weight: 600;
     letter-spacing: 3px;
-  }
-
-  .nav-link:hover {
-    transform: scale(1.08);
   }
 }
 </style>
