@@ -172,5 +172,35 @@
     "img": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L5DNArIr8FFAeeHOM0KmjQ.png",
     "description": "Tutorial hell is a real struggle for developers, especially beginners. It's that comfort zone of consuming tutorials without actually practicing and solidifying your skills.",
     "link": "https://medium.com/@yaasir007/escape-tutorial-hell-dive-into-project-based-learning-6bcb42ef1d3e"
+  },
+  {
+    "title": "PNPM vs NPM",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Uv2NUxMPFV_0BSRT4iQSgA.png",
+    "description": "If you're a JavaScript developer, you've probably used NPM (Node Package Manager) at some point. It's been the go-to package manager for Node.js for years.",
+    "link": "https://yaasir007.medium.com/pnpm-vs-npm-eb941a8ce53f"
+  },
+  {
+    "title": "A Day in the Life of a Modern Front-End Developer",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*8SOFCuV864Sql_2G0nnmhQ.jpeg",
+    "description": "The websites you use every day? Those seamless interfaces and dynamic features? That's the handiwork of front-end developers, and their skillset is getting cooler by the day.",
+    "link": "https://yaasir007.medium.com/a-day-in-the-life-of-a-modern-front-end-developer-2a5ed44edd8b"
+  },
+  {
+    "title": "Simplifying Your Vue 3 Project with Path Aliases",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*dKPiO-wcokEy4VzanrM_iA.jpeg",
+    "description": "Working on a big Vue 3 project can get messy fast. One common headache is dealing with long, tangled import paths. Imagine trying to find your way through a maze of folders just to bring in a simple component!",
+    "link": "https://yaasir007.medium.com/simplifying-your-vue-3-project-with-path-aliases-509321a1700f"
+  },
+  {
+    "title": "Understanding the Folder Structure in Nuxt 3",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*K2ZPHR0r9sLOhgxhnWPN8Q.jpeg",
+    "description": "Nuxt 3 is the latest version of the popular Vue.js framework, designed to make modern web development more streamlined and efficient. One of the critical aspects of any framework is its folder structure, as it directly influences the organization of your project and the ease of navigating through code.",
+    "link": "https://yaasir007.medium.com/understanding-the-folder-structure-in-nuxt-3-b29ee64d9114"
+  },
+  {
+    "title": "How to use props and emits in Vue 3",
+    "img": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*xr6nDJ7gy4glRZe_lAfHrQ.png",
+    "description": "Vue 3 is a progressive JavaScript framework that is widely used for building user interfaces. Its component-based architecture allows developers to create reusable code, making applications more efficient and easier to manage.",
+    "link": "https://yaasir007.medium.com/how-to-use-props-and-emits-in-vue-3-59228403bd30"
   }
 ]

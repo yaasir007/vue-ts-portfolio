@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import ProgressSpinner from 'primevue/progressspinner';
+
 import ScrollReveal from 'scrollreveal'
 import ProjectsJson from '../data/articles.json'
 import Button from 'primevue/button';
@@ -18,14 +20,18 @@ onMounted(() => {
 <template>
   <div class="projects-section">
     <div class="projects-title">Blogs</div>
-    <div class="projects-container">
-      <div v-for="project in ProjectsJson" class="article-card">
+    <div v-if="ProjectsJson.length < 0" class="card flex justify-center" style="margin-top: 6rem;">
+        <ProgressSpinner />
+    </div>
+
+    <div v-else class="projects-container">
+      <div v-for="project in ProjectsJson.reverse()" class="article-card">
         <div v-if="project" class="project-card">
           <div class="content">
             <p class="title">{{ project.title }}</p>
             <p class="date">{{ project.description.substring(0, 90) }} ...</p>
             <div style="display: flex; gap: .8rem;">
-              <Button v-show="project.link" style="background-color: #a60080; border: none;" class="project-buttons" label="Read More" @click="redirectWebsite(project)" />
+              <Button v-show="project.link" style="background-color: #EF5962; border: none;" class="project-buttons" label="Read More" @click="redirectWebsite(project)" />
             </div>
           </div>
           <img :src="project.img || defaultImg" alt="article-cover" />
