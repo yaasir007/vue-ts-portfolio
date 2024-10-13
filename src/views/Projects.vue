@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import ProgressSpinner from 'primevue/progressspinner';
+
 import ScrollReveal from 'scrollreveal'
 import ProjectsJson from '../data/projects.json'
 // import Card from 'primevue/card';
@@ -23,14 +25,18 @@ onMounted(() => {
 <template>
   <div class="projects-section">
     <div class="projects-title">Projects</div>
-    <div class="projects-container">
+    <div v-if="ProjectsJson.length < 0" class="card flex justify-center" style="margin-top: 6rem;">
+        <ProgressSpinner />
+    </div>
+
+    <div v-else class="projects-container">
       <div v-for="project in ProjectsJson" class="article-card">
         <div v-if="project" class="project-card">
           <div class="content">
             <p class="title">{{ project.title }}</p>
             <p class="date">{{ project.description.substring(0, 90) }} ...</p>
             <div style="display: flex; gap: .8rem;">
-              <Button v-show="project.github.disabled" style="background-color: #a60080; border: none;" class="project-buttons" label="Github" @click="redirectGithub(project)" />
+              <Button v-show="project.github.disabled" style="background-color: #EF5962; border: none;" class="project-buttons" label="Github" @click="redirectGithub(project)" />
               <Button v-show="project.website.disabled" style="background-color: #373F7A; border: none;" class="project-buttons" label="Live" @click="redirectWebsite(project)" />
             </div>
           </div>
